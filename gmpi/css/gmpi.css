@@ -1,0 +1,90 @@
+/* CS Designed by Sean Cosgrove and Emery Wollerscheid */
+
+/*---------- General Section ----------*/
+* {
+    font-family: 'sans-serif';
+}
+
+body {
+    background-color: green;
+    margin: 2.5%;
+}
+
+a {
+    padding: 5px;
+}
+
+p {
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-indent: 2.5em;
+}
+
+h1 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'fanasty';
+    font-weight: bold;
+    font-size: 420%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Monotype Corsiva', 'Comic Sans MS', 'cursive';
+    font-size: 300%;
+    font-weight:bold;
+    font-style: italic;
+    text-indent: 1.5em;
+}
+
+img {
+    max-width:100%;
+    border: thick solid white;
+    border-radius: 1em;
+    padding: 0.2 em;
+}
+
+li {
+    padding: 0.5em;
+    font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+    font-size: 16px;
+    line-height: 1.5em;
+    width: 700px;
+}
+
+/*---------- Header Section ----------*/
+
+header {
+    text-align: center;
+    max-width: 100%;
+}
+
+/*---------- Footer Section ----------*/
+
+footer {
+     background-color: green;
+     text-align: center;
+     margin-top: 5em;
+}
+
+/*---------- Navigation Section ----------*/
+
+nav {
+    text-align: center;
+}
+
+a:hover {
+    background: white;
+    border: 4px solid green;
+    text-decoration: underline;
+    color: green;
+}
+
+nav ol li {
+    display: inline-block;
+    list-style-type: none;
+    width: 10em;
+    font-size: 125%;
+    max-width: 100%;
+}
+
+/*---------- Class Section ---------*/
