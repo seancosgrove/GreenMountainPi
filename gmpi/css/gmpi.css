@@ -20,7 +20,7 @@ p {
 }
 
 h1 {
-    color: white;
+    color: orange;
     font-family: Impact, Haettenschweiler, 'fanasty';
     font-weight: bold;
     font-size: 420%;
@@ -69,7 +69,12 @@ footer {
 /*---------- Navigation Section ----------*/
 
 nav {
+    color: orange;
     text-align: center;
+}
+
+a:link{
+    color: orange;
 }
 
 a:hover {

@@ -7,7 +7,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<ahref="index.php">Home</a>';
+        print '<a href="index.php">Home</a>';
         print '</li>';
 
 	print'<li class="';
@@ -15,7 +15,7 @@
             print ' activePage ';
         }
         print '">';
-        print '<ahref="network.php">Nmap Capture</a>';
+        print '<a href="network.php">Network</a>';
         print '</li>';
 
        ?>
