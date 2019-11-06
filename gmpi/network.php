@@ -9,9 +9,15 @@ include "top.php";
 <h2>Nmap Capture</h2>
 
 <?php
-$nmapFile = fopen("/home/pi/Desktop/final-project/network/nmapcapture.txt","r") or die("Unable to open file.");
-echo fread($nmapFile,filesize("/home/pi/Desktop/final-project/network/nmapcapture.txt","r"));
+$nmapFile = fopen("/../network/nmapcapture.txt","r") or die("Unable to open file.");
+echo fread($nmapFile,filesize("/../network/nmapcapture.txt","r"));
 fclose($nmapFile);
+echo "Done";
+?>
+
+<?php>
+file_get_contents("/../network/nmapcapture.txt");
+echo "Done";
 ?>
 
 <?php

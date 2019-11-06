@@ -1,9 +1,9 @@
-# Nmap 7.70 scan initiated Fri Nov  1 14:52:39 2019 as: nmap -oN nmapcapture.txt 192.168.1.23
+# Nmap 7.70 scan initiated Wed Nov  6 16:09:56 2019 as: nmap -oN nmapcapture.txt 192.168.1.23
 Nmap scan report for 192.168.1.23
-Host is up (0.00036s latency).
+Host is up (0.000060s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
 
-# Nmap done at Fri Nov  1 14:52:39 2019 -- 1 IP address (1 host up) scanned in 0.26 seconds
+# Nmap done at Wed Nov  6 16:09:59 2019 -- 1 IP address (1 host up) scanned in 3.41 seconds
