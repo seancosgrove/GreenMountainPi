@@ -18,7 +18,5 @@ For physical security, we plan to hook up a camera and get its live feed on the 
 <?php
 include "bot.php";
 ?>
-</body>
-</html>
 
 

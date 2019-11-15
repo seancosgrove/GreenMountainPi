@@ -7,7 +7,10 @@ import os
 
 def main():
 
-    os.system ('hostname -I')
-    os.system ('nmap -oN nmapcapture.txt 192.168.1.23')
+    # run nmap os command with connected network inet
+    networkTxt = open("network.txt","r") # open network.txt file with connected network inet
+    inet = networkTxt.read() # read file into string
+    cmd = ("nmap -oN nmapcapture.txt " + inet) # create string for os command
+    os.system (cmd) # execute os command
 
 main()

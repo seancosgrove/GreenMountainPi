@@ -7,6 +7,10 @@ import os
 
 def main():
 
+    # open IP.txt file
+    IPtxt = open("IP.txt", "w")
+    networkTxt = open("network.txt", "w")
+
     # initialize variables
     eth0 = " "
     lo = " "
@@ -18,6 +22,33 @@ def main():
     ifconfig = ifconfig.split('\n')
     # iterate through each line of ifconfig list
     for line in ifconfig:
+
+        # wlan0 network
+        if line.startswith('wlan0'):
+            os.system('echo "WLAN0 LOCATED"') # console echo that wlan0 was found
+            id = ifconfig.index(line) # get list index of first line with 'wlan0'
+            inetid = id + 1 # get list index of next line with inet address
+            inet = ifconfig[inetid] # get inet address line with index number
+            inet = inet.strip() # strip whitespace
+            inet = inet.split() # split inet address line into a list
+            inet = inet[1] # get index 1 of inet address list (0 = "inet:", 1 = "1.1.1.1.1")
+            wlan0 = inet # set wlan0 variable equal to the inet address
+            # read contents of 'iwgetid wlan0' os command to a string
+            iwgetid = os.popen('iwgetid wlan0').read()
+            if iwgetid.startswith('wlan0'): # iwgetid string is not empty (connected to this network)
+                iwgetid = iwgetid.split() # split contents of iwgetid string into a list
+                ESSID = iwgetid[1] # get index 1 of iwgetid list (0 = "etho", 1 = "ESSID: 'Network Name'")
+                ESSID = ESSID.split('"') # split ESSID string into a list to get ride of quotations
+                ESSID = ESSID[1] # get index 1 of ESSID list (0 = "ESSID: ", 1 = "Network Name")
+                wlan0Network = "wlan0: " + inet + " | ESSID: " + ESSID # store network inet and ESSID in a string
+                print(wlan0Network) # print wlan0 network string
+                wlan0 = wlan0Network # store wlan0 network string as global wlan0 variable
+                networkTxt.write(inet + "\n") # write inet of connected network to network.txt
+            else: # iwgetid string is empty
+                wlan0Network = "wlan0: " + inet # store network inet in a string
+                print(wlan0Network) # print wlan0 network string
+                wlan0 = wlan0Network # store wlan0 network string as global wlan0 variable
+
         # eth0 network
         if line.startswith('eth0'):
             os.system('echo "ETH0 LOCATED"') # console echo that eth0 was found
@@ -35,10 +66,16 @@ def main():
                 ESSID = iwgetid[1] # get index 1 of iwgetid list (0 = "etho", 1 = "ESSID: 'Network Name'")
                 ESSID = ESSID.split('"') # split ESSID string into a list to get ride of quotations
                 ESSID = ESSID[1] # get index 1 of ESSID list (0 = "ESSID: ", 1 = "Network Name")
-                print("eth0: " + inet + " | ESSID: " + ESSID) # print network name with inet address and ESSID
+                eth0Network = "eth0: " + inet + " | ESSID: " + ESSID # store network inet and ESSID in a string
+                print(eth0Network) # print eth0 network string
+                eth0 = eth0Network # store eth0 network string as global eth0 variable
+                networkTxt.write(inet + "\n") # write inet of connected network to network.txt
             else: # iwgetid string is empty
-                print("eth0: " + inet) # print network name with inet address
-        # eth0 network
+                eth0Network = "eth0: " + inet # store network inet in a string
+                print(eth0Network) # print eth0 network string
+                eth0 = eth0Network # store eth0 network string as global eth0 variable
+
+        # lo network
         if line.startswith('lo'):
             os.system('echo "LO LOCATED"') # console echo that lo was found
             id = ifconfig.index(line) # get list index of first line with 'lo'
@@ -55,33 +92,20 @@ def main():
                 ESSID = iwgetid[1] # get index 1 of iwgetid list (0 = "etho", 1 = "ESSID: 'Network Name'")
                 ESSID = ESSID.split('"') # split ESSID string into a list to get ride of quotations
                 ESSID = ESSID[1] # get index 1 of ESSID list (0 = "ESSID: ", 1 = "Network Name")
-                print("lo: " + inet + " | ESSID: " + ESSID) # print network name with inet address and ESSID
+                loNetwork = "lo: " + inet + " | ESSID: " + ESSID # store network inet and ESSID in a string
+                print(loNetwork) # print lo network string
+                lo = loNetwork # store lo network string as global lo variable
+                networkTxt.write(inet + "\n") # write inet of connected network to network.txt
             else: # iwgetid string is empty
-                print("lo: " + inet) # print network name with inet address
-        # eth0 network
-        if line.startswith('wlan0'):
-            os.system('echo "WLAN0 LOCATED"') # console echo that wlan0 was found
-            id = ifconfig.index(line) # get list index of first line with 'wlan0'
-            inetid = id + 1 # get list index of next line with inet address
-            inet = ifconfig[inetid] # get inet address line with index number
-            inet = inet.strip() # strip whitespace
-            inet = inet.split() # split inet address line into a list
-            inet = inet[1] # get index 1 of inet address list (0 = "inet:", 1 = "1.1.1.1.1")
-            wlan0 = inet # set wlan0 variable equal to the inet address
-            # read contents of 'iwgetid wlan0' os command to a string
-            iwgetid = os.popen('iwgetid wlan0').read()
-            if iwgetid.startswith('wlan0'): # iwgetid string is not empty (connected to this network)
-                iwgetid = iwgetid.split() # split contents of iwgetid string into a list
-                ESSID = iwgetid[1] # get index 1 of iwgetid list (0 = "etho", 1 = "ESSID: 'Network Name'")
-                ESSID = ESSID.split('"') # split ESSID string into a list to get ride of quotations
-                ESSID = ESSID[1] # get index 1 of ESSID list (0 = "ESSID: ", 1 = "Network Name")
-                print("wlan0: " + inet + " | ESSID: " + ESSID) # print network name with inet address and ESSID
-            else: # iwgetid string is empty
-                print("wlan0: " + inet) # print network name with inet address
+                loNetwork = "lo: " + inet # store network inet in a string
+                print(loNetwork) # print lo network string
+                lo = loNetwork # store lo network string as global lo variable
 
+    IPtxt.write(wlan0 + "\n")
+    IPtxt.write(eth0 + "\n")
+    IPtxt.write(lo + "\n")
 
     #cmd= "ping " + wlan0
     #os.system (cmd)
 
 main()
-
