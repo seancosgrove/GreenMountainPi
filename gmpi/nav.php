@@ -19,11 +19,11 @@
         print '</li>';
 
 	print'<li class="';
-	if ($path_parts['filename'] == "surveilance") {
+	if ($path_parts['filename'] == "surveillance") {
 		print ' activePage ';
 	}
 	print '">';
-	print '<a href="surveilance.php">Surveilance</a>';
+	print '<a href="surveillance.php">Surveillance</a>';
 	print '</li>';
 
        ?>
