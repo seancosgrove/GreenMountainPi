@@ -11,12 +11,13 @@
 
 # Allow SSH
 /sbin/iptables -A INPUT -p tcp --dport 2222 -j LOG --log-level 7 --log-prefix "Accept 2222 alt-ssh"
+/sbin/iptables -A INPUT -p tcp -d localhost --dport 2222 -j ACCEPT
 
 # Allow web server
 /sbin/iptables -A INPUT -p tcp --dport 80 -j LOG --log-level 7 --log-prefix "Accept 80 HTTP"
-/sbin/iptables -A INPUT -p tcp -d $localhost --dort 80 -j ACCEPT
+/sbin/iptables -A INPUT -p tcp -d localhost --dport 80 -j ACCEPT
 
 # Default Deny
-/sbin/iptables -A INPUT -d $localhost -j LOG --log-level 7 --log-prefix "Default Deny"
+/sbin/iptables -A INPUT -d localhost -j LOG --log-level 7 --log-prefix "Default Deny"
 /sbin/iptables -A INPUT -j DROP
 
