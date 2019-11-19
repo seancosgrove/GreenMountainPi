@@ -2,10 +2,12 @@
 include "top.php"
 ?>
 
+<body>
 <article id="main">
-    <h1>Surveillance</h1>
+    <h1>Security</h1>
 </article>
 
 <?php
-include "bottom.php"
+include "bot.php"
 ?>
+
