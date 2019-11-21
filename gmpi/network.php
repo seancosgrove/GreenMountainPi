@@ -13,11 +13,11 @@ $IPpy = "/~/../../var/www/network/IP.py";
 $nmapPy = "/~/../../var/www/network/nmap.py";
 $cmd = escapeshellcmd($IPpy);
 $output = shell_exec($cmd);
-echo $ouput;
+print $ouput;
 
 $cmd = escapeshellcmd($nmapPy);
 $output = shell_exec($cmd);
-echo $output;
+print $output;
 ?>
 
 <?php

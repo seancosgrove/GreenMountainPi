@@ -1,7 +1,7 @@
 # Sean Cosgrove and Emery Wollerscheid
 # Green Mountain Pi
 # CS 121 Final Project
-# nmap.py
+# IP.py
 
 import os
 
