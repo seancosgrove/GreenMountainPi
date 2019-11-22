@@ -14,13 +14,12 @@ include "top.php";
 <?php
 $IPpy = "/~/../../var/www/network/IP.py";
 $nmapPy = "/~/../../var/www/network/nmap.py";
-$cmd = escapeshellcmd($IPpy);
-$output = shell_exec($cmd);
-print $ouput;
+shell_exec('sudo -u www-data python3 /var/www/network/IP.py');
+shell_exec('sudo -u www-data python3 ' + $IPpy);
 
-$cmd = escapeshellcmd($nmapPy);
-$output = shell_exec($cmd);
-print $output;
+$cmd2 = "sudo -u www-data python3 " + $nmapPy;
+shell_exec('sudo -u www-data python3 /var/www/network/nmap.py');
+shell_exec('sudo -u www-data python3 ' + $nmapPy);
 ?>
 
 <?php
