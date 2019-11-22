@@ -4,7 +4,8 @@ include "top.php";
 
 <article id='main'>
 	<h1>Network</h1>
-	<div class="row">
+	<div class="container">
+	<div class="row justify-content-md-center">
 	    <div class="col-md-3">
 	        <h2>Addresses</h2>
 	    </div>
@@ -60,6 +61,7 @@ if ($nmapFile) {
 }
 ?>
     </div>
+</div>
 </div>
 
 <?php
