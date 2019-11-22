@@ -1,40 +1,20 @@
 <hr>
-<nav>
-    <ol>
-        <?php
-        print'<li class="';
-        if ($path_parts['filename'] == "index") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="index.php">Home</a>';
-        print '</li>';
+<ul class="nav justify-content-center">
+	<li class="nav-item">
+        	<a class="nav-link" href="index.php">Home</a>
+        </li>
 
-	print'<li class="';
-        if ($path_parts['filename'] == "network") {
-            print ' activePage ';
-        }
-        print '">';
-        print '<a href="network.php">Network</a>';
-        print '</li>';
+	<li class="nav-item">
+        	<a class="nav-link"  href="network.php">Network</a>
+        </li>
 
-        print'<li class="';
-        if ($path_parts['filename'] == "security") {
-                print ' activePage ';
-        }
-        print '">';
-        print '<a href="security.php">Security</a>';
-        print '</li>';
+        <li class="nav-item">
+        	<a class="nav-link" href="security.php">Security</a>
+        </li>
 
-	print'<li class="';
-	if ($path_parts['filename'] == "surveillance") {
-		print ' activePage ';
-	}
-	print '">';
-	print '<a href="surveillance.php">Surveillance</a>';
-	print '</li>';
+	<li class="nav-item">
+		<a class="nav-link" href="surveillance.php">Surveillance</a>
+	</li>
 
-       ?>
-    </ol>
-</nav>
+</ul>
 <hr>

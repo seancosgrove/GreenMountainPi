@@ -12,6 +12,8 @@ $path_parts = pathinfo($phpSelf);
         <meta name='description' content='Final project for CS 121'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" href="/css/gmpi.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 
         <?php
 //-----------------------

@@ -3,10 +3,12 @@ include "top.php";
 ?>
 
 <article id='main'>
-<h1>Network</h1>
-</article>
-
-<h2>Addresses</h2>
+	<h1>Network</h1>
+	<div class="row">
+	    <div class="col-md-3">
+	        <h2>Addresses</h2>
+	    </div>
+	    <div class="col-md-9">
 
 <?php
 $IPpy = "/~/../../var/www/network/IP.py";
@@ -35,9 +37,13 @@ if ($IPfile) {
     echo "Unable to open IP.txt";
 }
 ?>
-
-<h2>Nmap Capture</h2>
-
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <h2>Nmap Capture</h2>
+    </div>
+    <div class="col-md-9">
 <?php
 $nmapCapture = "/~/../../var/www/network/nmapcapture.txt";
 $nmapFile = fopen($nmapCapture,"r") or die("Unable to open file.");
@@ -53,6 +59,8 @@ if ($nmapFile) {
     echo "Unable to open nmapcature.txt";
 }
 ?>
+    </div>
+</div>
 
 <?php
 include "bot.php";
