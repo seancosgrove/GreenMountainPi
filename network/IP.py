@@ -43,7 +43,7 @@ def main():
                 wlan0Network = "wlan0: " + inet + " | ESSID: " + ESSID # store network inet and ESSID in a string
                 print(wlan0Network) # print wlan0 network string
                 wlan0 = wlan0Network # store wlan0 network string as global wlan0 variable
-                networkTxt.write(inet + "\n") # write inet of connected network to network.txt
+                networkTxt.write(inet) # write inet of connected network to network.txt
             else: # iwgetid string is empty
                 wlan0Network = "wlan0: " + inet # store network inet in a string
                 print(wlan0Network) # print wlan0 network string
@@ -69,7 +69,7 @@ def main():
                 eth0Network = "eth0: " + inet + " | ESSID: " + ESSID # store network inet and ESSID in a string
                 print(eth0Network) # print eth0 network string
                 eth0 = eth0Network # store eth0 network string as global eth0 variable
-                networkTxt.write(inet + "\n") # write inet of connected network to network.txt
+                networkTxt.write(inet) # write inet of connected network to network.txt
             else: # iwgetid string is empty
                 eth0Network = "eth0: " + inet # store network inet in a string
                 print(eth0Network) # print eth0 network string
@@ -95,7 +95,7 @@ def main():
                 loNetwork = "lo: " + inet + " | ESSID: " + ESSID # store network inet and ESSID in a string
                 print(loNetwork) # print lo network string
                 lo = loNetwork # store lo network string as global lo variable
-                networkTxt.write(inet + "\n") # write inet of connected network to network.txt
+                networkTxt.write(inet) # write inet of connected network to network.txt
             else: # iwgetid string is empty
                 loNetwork = "lo: " + inet # store network inet in a string
                 print(loNetwork) # print lo network string

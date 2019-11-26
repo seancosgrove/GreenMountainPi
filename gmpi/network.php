@@ -45,7 +45,7 @@ if ($IPfile) {
     </div>
     <div class="col-md-9">
 <?php
-$nmapCapture = "/~/../../var/www/network/nmapcapture.txt";
+$nmapCapture = "/~/../../var/www/network/nmapCapture.txt";
 $nmapFile = fopen($nmapCapture,"r") or die("Unable to open file.");
 echo fread($nmapFile,filesize($nmapCapture,"r"));
 if ($nmapFile) {
@@ -56,7 +56,7 @@ if ($nmapFile) {
     }
     fclose($nmapFile);
 } else {
-    echo "Unable to open nmapcature.txt";
+    echo "Unable to open nmapCapture.txt";
 }
 ?>
     </div>
