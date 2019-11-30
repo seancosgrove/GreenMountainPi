@@ -4,12 +4,24 @@
 # readFirewallLog.py
 
 import os
+import datetime
 
 def main():
 
     # open firewall.log and firewallLog.txt file
     firewallLog = open("firewall.log", "r")
-    firewallLogTxt = open("firewallLog.txt", "w")
+    firewallLogTxt = open("firewallLog.txt", "a")
+    currentFirewallLogTxt = open("currentFirewallLog.txt", "w")
+
+    # initialize today's date
+    today = datetime.datetime.now() # get today's date
+    date = today.strftime("%b-%d-%Y") # format date into string
+    date = date.split("-") # split string into list
+    month = date[0] # get the month
+    day = date[1] # get the day of the month
+    date = month + " " + day # prepare string to get today's logs
+
+    warnings = []
 
     # read each line of firewall.log
     for line in firewallLog:
@@ -24,5 +36,11 @@ def main():
             message = message.strip() # remove whitespace
             logLine = timestamp + " " + message # prepare string for file write
             firewallLogTxt.write(logLine + "\n") # write shortened log line to file
+            if (timestamp.startswith(date)): # get log lines from today
+                currentFirewallLogTxt.write(logLine + "\n") # write shortened log line to file
+            if (timestamp.startswith(date) and message.startswith("WARN")): # get warnings from today
+                warnings.append(logLine) # append warnings to list
+
+    print(warnings)
 
 main()
