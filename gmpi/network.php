@@ -11,6 +11,9 @@ include "top.php";
 	    </div>
 	    <div class="col-md-9">
 	    <p>The Addresses Section shows a scan of the network properties of the Raspberry Pi and the Nmap Capture Section displays a list of the most recent network activity.</p>
+            </div>
+         </div>
+		
 	<div class="row justify-content-md-center">
 	    <div class="col-md-3">
 	        <h2>Addresses</h2>
