@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(orange 25%, green 75%);
+    background: linear-gradient(orange 426px, green 100px);
 }
 
 .jumbotron {
@@ -93,12 +93,12 @@ ul {
 }
 
 a:link{
-    color: orange;
+    color: green;
 }
 
 a:hover {
     background: white;
-    color: orange;
+    color: green;
     text-decoration: underline;
     border-radius: 5px;
     transition: all 1s ease;
@@ -114,6 +114,7 @@ a:hover {
 }
 
 .row {
-    background-color: white;
+    background-color: orange;
     border-radius: 10px;
+    margin: 10px;
 }
