@@ -23,4 +23,8 @@ def main():
     antiCmd = "sudo cp -r ../anti/* ~/../../var/www/anti"
     os.system(antiCmd)
 
+    # copy contents of tools folder to web server
+    toolsCmd = "sudo cp -r ../tools/* ~/../../var/www/tools"
+    os.system(toolsCmd)
+
 main()
