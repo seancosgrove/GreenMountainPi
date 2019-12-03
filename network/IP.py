@@ -8,8 +8,8 @@ import os
 def main():
 
     # open IP.txt file
-    IPtxt = open("/var/www/network/IP.txt", "w")
-    networkTxt = open("/var/www/network/network.txt", "w")
+    IPtxt = open("../network/IP.txt", "w")
+    networkTxt = open("../network/network.txt", "w")
 
     # initialize variables
     eth0 = " "

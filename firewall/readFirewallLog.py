@@ -9,9 +9,9 @@ import datetime
 def main():
 
     # open firewall.log and firewallLog.txt file
-    firewallLog = open("firewall.log", "r")
-    firewallLogTxt = open("firewallLog.txt", "a")
-    currentFirewallLogTxt = open("currentFirewallLog.txt", "w")
+    firewallLog = open("../firewall/firewall.log", "r")
+    firewallLogTxt = open("../firewall/firewallLog.txt", "a")
+    currentFirewallLogTxt = open("../firewall/currentFirewallLog.txt", "w")
 
     # initialize today's date
     today = datetime.datetime.now() # get today's date
