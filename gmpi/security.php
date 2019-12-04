@@ -1,7 +1,6 @@
 <?php
 include "top.php"
 ?>
-
 <article id="main">
     <h1>Security</h1>
 </article>
@@ -19,24 +18,37 @@ include "top.php"
             <div class="col-md-3">
                 <h2>Firewall</h2>
             </div>
-            <div class="col-md-9">
-                <?php
-                $firewallLogTxt = "/~/../../var/www/firewall/currentFirewallLog.txt";
-                $firewallLogFile = fopen($firewallLogTxt,"r") or die("Unable to open file.");
-                echo fread($firewallLogFile,filesize($firewallLogTxt,"r"));
-                if ($firewallLogFile) {
-                    while (($line = fgets($firewallLogFile)) !== false) {
-                        echo "<p>";
-                        echo $line;
-                        echo "</p>";
+        </div>
+//        <div class="scrollBar">
+            <?php
+            $firewallLogTxt = "/~/../../var/www/firewall/currentFirewallLog.txt";
+            $firewallLogFile = fopen($firewallLogTxt,"r") or die("Unable to open file.");
+            echo fread($firewallLogFile,filesize($firewallLogTxt,"r"));
+            if ($firewallLogFile) {
+                while (($line = fgets($firewallLogFile)) !== false) {
+                    $length = strlen($line);
+                    $messageLength = 15 - $length;
+                    $timestamp = substr($line, 0, 15);
+                    $message = substr($line, $messageLength);
+                    echo '<div class="row justify-content-md-center">'; 
+                    echo '<div class="col-md-3">';
+                    echo "<p>";
+                    echo $timestamp;
+                    echo "</p>";
+                    echo "</div>";
+                    echo '<div class="col-md-9">';
+                    echo "<p>";
+                    echo $message;
+                    echo "</p>";
+                    echo "</div>";
+                    echo "</div>";
                     }
                     fclose($firewallLogFile);
                 } else {
                     echo "Unable to open currentFirewallLog.txt";
                 }
                 ?>
-            </div>
-        </div>
+//            </div>
         <hr>
         <div class="row justify-content-md-center">
             <div class="col-md-3">

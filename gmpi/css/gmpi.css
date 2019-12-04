@@ -118,3 +118,8 @@ a:hover {
     border-radius: 10px;
     margin: 10px;
 }
+
+.scrollBar {
+    position: absolute;
+    overflow-y: scroll;
+}

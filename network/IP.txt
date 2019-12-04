@@ -1,3 +1,3 @@
-wlan0: 10.245.64.93 | ESSID: UVM
+wlan0: 192.168.1.16 | ESSID: ChickenSendersAndTrenchFries
 eth0: 169.254.138.38
 lo: 127.0.0.1

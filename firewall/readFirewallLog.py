@@ -38,7 +38,11 @@ def main():
             message = log[1] # initialize message string
             timestamp = timestamp.split(" [") # split timestamp into list
             timestamp = timestamp[0] # get date and time
+            timestamp = timestamp.split("rasp") # split string into list
+            timestamp = timestamp[0] # get timestamp before "raspberrypi kernal: "
             timestamp = timestamp.strip() # remove whitespace
+            message = message.split("kernel: ") # split message into list
+            message = message[0] # get message after "raspberrypi kernal: "
             message = message.strip() # remove whitespace
             logLine = timestamp + " " + message # prepare string for file write
             firewallLogTxt.write(logLine + "\n") # write shortened log line to file
@@ -47,6 +51,9 @@ def main():
             if (timestamp.startswith(date) and message.startswith("WARN")): # get warnings from today
                 warnings.append(logLine) # append warnings to list
 
+    print ("Warnings from today:")
+    if not warnings:
+        print("Nothing to report")
     for warning in warnings:
         print(warning)
 

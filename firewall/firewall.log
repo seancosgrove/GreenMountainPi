@@ -4811,3 +4811,569 @@ Dec  4 14:29:22 raspberrypi kernel: [   18.281394] Bluetooth: RFCOMM socket laye
 Dec  4 14:29:22 raspberrypi kernel: [   18.281422] Bluetooth: RFCOMM ver 1.11
 Dec  4 14:29:26 raspberrypi kernel: [   22.355363] fuse init (API version 7.27)
 Dec  4 14:29:34 raspberrypi kernel: [   30.011736] IPv6: wlan0: IPv6 duplicate address 2620:104:e001:9010:ab5a:25bc:7a17:fa9f used by 00:6b:f1:08:54:fb detected!
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Booting Linux on physical CPU 0x0
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Linux version 4.19.75-v7+ (dom@buildbot) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0-88-g8460611)) #1270 SMP Tue Sep 24 18:45:11 BST 2019
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] CPU: div instructions available: patching division code
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] OF: fdt: Machine model: Raspberry Pi 3 Model B Plus Rev 1.3
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Memory policy: Data cache writealloc
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] cma: Reserved 8 MiB at 0x3ac00000
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] On node 0 totalpages: 242688
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]   Normal zone: 2133 pages used for memmap
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]   Normal zone: 0 pages reserved
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]   Normal zone: 242688 pages, LIFO batch:63
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] random: get_random_bytes called from start_kernel+0xac/0x4b4 with crng_init=0
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] percpu: Embedded 17 pages/cpu s39488 r8192 d21952 u69632
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] pcpu-alloc: s39488 r8192 d21952 u69632 alloc=17*4096
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 240555
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Kernel command line: coherent_pool=1M 8250.nr_uarts=0 bcm2708_fb.fbwidth=656 bcm2708_fb.fbheight=416 bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  dwc_otg.lpm_enable=0 console=ttyS0,115200 console=tty1 root=PARTUUID=73528744-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Memory: 939088K/970752K available (8192K kernel code, 629K rwdata, 2176K rodata, 1024K init, 821K bss, 23472K reserved, 8192K cma-reserved)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] Virtual kernel memory layout:
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]     vmalloc : 0xbb800000 - 0xff800000   (1088 MB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]     lowmem  : 0x80000000 - 0xbb400000   ( 948 MB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (9184 kB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 630 kB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 822 kB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] ftrace: allocating 26399 entries in 78 pages
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] rcu: Hierarchical RCU implementation.
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] arch_timer: cp15 timer(s) running at 19.20MHz (phys).
+Dec  4 15:12:08 raspberrypi kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+Dec  4 15:12:08 raspberrypi kernel: [    0.000007] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+Dec  4 15:12:08 raspberrypi kernel: [    0.000019] Switching to timer-based delay loop, resolution 52ns
+Dec  4 15:12:08 raspberrypi kernel: [    0.000283] Console: colour dummy device 80x30
+Dec  4 15:12:08 raspberrypi kernel: [    0.000302] console [tty1] enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.000345] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000361] pid_max: default: 32768 minimum: 301
+Dec  4 15:12:08 raspberrypi kernel: [    0.000703] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.000719] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.001634] CPU: Testing write buffer coherency: ok
+Dec  4 15:12:08 raspberrypi kernel: [    0.002095] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Dec  4 15:12:08 raspberrypi kernel: [    0.002746] Setting up static identity map for 0x100000 - 0x10003c
+Dec  4 15:12:08 raspberrypi kernel: [    0.002895] rcu: Hierarchical SRCU implementation.
+Dec  4 15:12:08 raspberrypi kernel: [    0.003688] smp: Bringing up secondary CPUs ...
+Dec  4 15:12:08 raspberrypi kernel: [    0.004527] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Dec  4 15:12:08 raspberrypi kernel: [    0.005449] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+Dec  4 15:12:08 raspberrypi kernel: [    0.006315] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+Dec  4 15:12:08 raspberrypi kernel: [    0.006440] smp: Brought up 1 node, 4 CPUs
+Dec  4 15:12:08 raspberrypi kernel: [    0.006451] SMP: Total of 4 processors activated (153.60 BogoMIPS).
+Dec  4 15:12:08 raspberrypi kernel: [    0.006457] CPU: All CPU(s) started in HYP mode.
+Dec  4 15:12:08 raspberrypi kernel: [    0.006462] CPU: Virtualization extensions available.
+Dec  4 15:12:08 raspberrypi kernel: [    0.007438] devtmpfs: initialized
+Dec  4 15:12:08 raspberrypi kernel: [    0.020783] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+Dec  4 15:12:08 raspberrypi kernel: [    0.021022] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Dec  4 15:12:08 raspberrypi kernel: [    0.021040] futex hash table entries: 1024 (order: 4, 65536 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.021639] pinctrl core: initialized pinctrl subsystem
+Dec  4 15:12:08 raspberrypi kernel: [    0.022492] NET: Registered protocol family 16
+Dec  4 15:12:08 raspberrypi kernel: [    0.025543] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+Dec  4 15:12:08 raspberrypi kernel: [    0.031288] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+Dec  4 15:12:08 raspberrypi kernel: [    0.031296] hw-breakpoint: maximum watchpoint size is 8 bytes.
+Dec  4 15:12:08 raspberrypi kernel: [    0.031503] Serial: AMBA PL011 UART driver
+Dec  4 15:12:08 raspberrypi kernel: [    0.033795] bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.068701] bcm2835-dma 3f007000.dma: DMA legacy API manager at (ptrval), dmachans=0x1
+Dec  4 15:12:08 raspberrypi kernel: [    0.070396] SCSI subsystem initialized
+Dec  4 15:12:08 raspberrypi kernel: [    0.070624] usbcore: registered new interface driver usbfs
+Dec  4 15:12:08 raspberrypi kernel: [    0.070678] usbcore: registered new interface driver hub
+Dec  4 15:12:08 raspberrypi kernel: [    0.070771] usbcore: registered new device driver usb
+Dec  4 15:12:08 raspberrypi kernel: [    0.090124] raspberrypi-firmware soc:firmware: Attached to firmware from 2019-09-24 17:37, variant start
+Dec  4 15:12:08 raspberrypi kernel: [    0.100395] raspberrypi-firmware soc:firmware: Firmware hash is 6820edeee4ef3891b95fc01cf02a7abd7ca52f17
+Dec  4 15:12:08 raspberrypi kernel: [    0.111796] clocksource: Switched to clocksource arch_sys_counter
+Dec  4 15:12:08 raspberrypi kernel: [    0.201496] VFS: Disk quotas dquot_6.6.0
+Dec  4 15:12:08 raspberrypi kernel: [    0.201579] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.201735] FS-Cache: Loaded
+Dec  4 15:12:08 raspberrypi kernel: [    0.201967] CacheFiles: Loaded
+Dec  4 15:12:08 raspberrypi kernel: [    0.211914] NET: Registered protocol family 2
+Dec  4 15:12:08 raspberrypi kernel: [    0.212675] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.212718] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.212829] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.213015] TCP: Hash tables configured (established 8192 bind 8192)
+Dec  4 15:12:08 raspberrypi kernel: [    0.213148] UDP hash table entries: 512 (order: 2, 16384 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.213194] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.213506] NET: Registered protocol family 1
+Dec  4 15:12:08 raspberrypi kernel: [    0.214061] RPC: Registered named UNIX socket transport module.
+Dec  4 15:12:08 raspberrypi kernel: [    0.214068] RPC: Registered udp transport module.
+Dec  4 15:12:08 raspberrypi kernel: [    0.214074] RPC: Registered tcp transport module.
+Dec  4 15:12:08 raspberrypi kernel: [    0.214079] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec  4 15:12:08 raspberrypi kernel: [    0.215879] hw perfevents: enabled with armv7_cortex_a7 PMU driver, 7 counters available
+Dec  4 15:12:08 raspberrypi kernel: [    0.218876] Initialise system trusted keyrings
+Dec  4 15:12:08 raspberrypi kernel: [    0.219067] workingset: timestamp_bits=14 max_order=18 bucket_order=4
+Dec  4 15:12:08 raspberrypi kernel: [    0.228866] FS-Cache: Netfs 'nfs' registered for caching
+Dec  4 15:12:08 raspberrypi kernel: [    0.229435] NFS: Registering the id_resolver key type
+Dec  4 15:12:08 raspberrypi kernel: [    0.229464] Key type id_resolver registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.229470] Key type id_legacy registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.229486] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Dec  4 15:12:08 raspberrypi kernel: [    0.231727] Key type asymmetric registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.231736] Asymmetric key parser 'x509' registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.231866] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+Dec  4 15:12:08 raspberrypi kernel: [    0.232018] io scheduler noop registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.232026] io scheduler deadline registered (default)
+Dec  4 15:12:08 raspberrypi kernel: [    0.232212] io scheduler cfq registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.232220] io scheduler mq-deadline registered (default)
+Dec  4 15:12:08 raspberrypi kernel: [    0.232227] io scheduler kyber registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.234416] bcm2708_fb soc:fb: FB found 1 display(s)
+Dec  4 15:12:08 raspberrypi kernel: [    0.243855] Console: switching to colour frame buffer device 82x26
+Dec  4 15:12:08 raspberrypi kernel: [    0.248287] bcm2708_fb soc:fb: Registered framebuffer for display 0, size 656x416
+Dec  4 15:12:08 raspberrypi kernel: [    0.250352] bcm2835-rng 3f104000.rng: hwrng registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.250659] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+Dec  4 15:12:08 raspberrypi kernel: [    0.251198] vc-sm: Videocore shared memory driver
+Dec  4 15:12:08 raspberrypi kernel: [    0.251514] gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+Dec  4 15:12:08 raspberrypi kernel: [    0.262274] brd: module loaded
+Dec  4 15:12:08 raspberrypi kernel: [    0.272411] loop: module loaded
+Dec  4 15:12:08 raspberrypi kernel: [    0.272987] Loading iSCSI transport class v2.0-870.
+Dec  4 15:12:08 raspberrypi kernel: [    0.273642] libphy: Fixed MDIO Bus: probed
+Dec  4 15:12:08 raspberrypi kernel: [    0.273748] usbcore: registered new interface driver lan78xx
+Dec  4 15:12:08 raspberrypi kernel: [    0.273805] usbcore: registered new interface driver smsc95xx
+Dec  4 15:12:08 raspberrypi kernel: [    0.273820] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Dec  4 15:12:08 raspberrypi kernel: [    0.301658] dwc_otg 3f980000.usb: base=(ptrval)
+Dec  4 15:12:08 raspberrypi kernel: [    0.501960] Core Release: 2.80a
+Dec  4 15:12:08 raspberrypi kernel: [    0.501970] Setting default values for core params
+Dec  4 15:12:08 raspberrypi kernel: [    0.502001] Finished setting default values for core params
+Dec  4 15:12:08 raspberrypi kernel: [    0.702286] Using Buffer DMA mode
+Dec  4 15:12:08 raspberrypi kernel: [    0.702293] Periodic Transfer Interrupt Enhancement - disabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.702299] Multiprocessor Interrupt Enhancement - disabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.702306] OTG VER PARAM: 0, OTG VER FLAG: 0
+Dec  4 15:12:08 raspberrypi kernel: [    0.702321] Dedicated Tx FIFOs mode
+Dec  4 15:12:08 raspberrypi kernel: [    0.702776] WARN::dwc_otg_hcd_init:1045: FIQ DMA bounce buffers: virt = bad14000 dma = 0xfad14000 len=9024
+Dec  4 15:12:08 raspberrypi kernel: [    0.702800] FIQ FSM acceleration enabled for :
+Dec  4 15:12:08 raspberrypi kernel: [    0.702800] Non-periodic Split Transactions
+Dec  4 15:12:08 raspberrypi kernel: [    0.702800] Periodic Split Transactions
+Dec  4 15:12:08 raspberrypi kernel: [    0.702800] High-Speed Isochronous Endpoints
+Dec  4 15:12:08 raspberrypi kernel: [    0.702800] Interrupt/Control Split Transaction hack enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.702808] dwc_otg: Microframe scheduler enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.702864] WARN::hcd_init_fiq:457: FIQ on core 1
+Dec  4 15:12:08 raspberrypi kernel: [    0.702875] WARN::hcd_init_fiq:458: FIQ ASM at 80655664 length 36
+Dec  4 15:12:08 raspberrypi kernel: [    0.702888] WARN::hcd_init_fiq:497: MPHI regs_base at bb810000
+Dec  4 15:12:08 raspberrypi kernel: [    0.702906] dwc_otg 3f980000.usb: DWC OTG Controller
+Dec  4 15:12:08 raspberrypi kernel: [    0.702941] dwc_otg 3f980000.usb: new USB bus registered, assigned bus number 1
+Dec  4 15:12:08 raspberrypi kernel: [    0.702977] dwc_otg 3f980000.usb: irq 56, io mem 0x00000000
+Dec  4 15:12:08 raspberrypi kernel: [    0.703024] Init: Port Power? op_state=1
+Dec  4 15:12:08 raspberrypi kernel: [    0.703030] Init: Power Port (0)
+Dec  4 15:12:08 raspberrypi kernel: [    0.703287] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+Dec  4 15:12:08 raspberrypi kernel: [    0.703298] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec  4 15:12:08 raspberrypi kernel: [    0.703308] usb usb1: Product: DWC OTG Controller
+Dec  4 15:12:08 raspberrypi kernel: [    0.703317] usb usb1: Manufacturer: Linux 4.19.75-v7+ dwc_otg_hcd
+Dec  4 15:12:08 raspberrypi kernel: [    0.703326] usb usb1: SerialNumber: 3f980000.usb
+Dec  4 15:12:08 raspberrypi kernel: [    0.703939] hub 1-0:1.0: USB hub found
+Dec  4 15:12:08 raspberrypi kernel: [    0.703983] hub 1-0:1.0: 1 port detected
+Dec  4 15:12:08 raspberrypi kernel: [    0.704559] dwc_otg: FIQ enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.704565] dwc_otg: NAK holdoff enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.704570] dwc_otg: FIQ split-transaction FSM enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.704581] Module dwc_common_port init
+Dec  4 15:12:08 raspberrypi kernel: [    0.704866] usbcore: registered new interface driver usb-storage
+Dec  4 15:12:08 raspberrypi kernel: [    0.705038] mousedev: PS/2 mouse device common for all mice
+Dec  4 15:12:08 raspberrypi kernel: [    0.705870] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+Dec  4 15:12:08 raspberrypi kernel: [    0.706103] bcm2835-cpufreq: min=600000 max=1400000
+Dec  4 15:12:08 raspberrypi kernel: [    0.706557] sdhci: Secure Digital Host Controller Interface driver
+Dec  4 15:12:08 raspberrypi kernel: [    0.706562] sdhci: Copyright(c) Pierre Ossman
+Dec  4 15:12:08 raspberrypi kernel: [    0.706929] mmc-bcm2835 3f300000.mmcnr: could not get clk, deferring probe
+Dec  4 15:12:08 raspberrypi kernel: [    0.707307] sdhost-bcm2835 3f202000.mmc: could not get clk, deferring probe
+Dec  4 15:12:08 raspberrypi kernel: [    0.707431] sdhci-pltfm: SDHCI platform and OF driver helper
+Dec  4 15:12:08 raspberrypi kernel: [    0.708977] ledtrig-cpu: registered to indicate activity on CPUs
+Dec  4 15:12:08 raspberrypi kernel: [    0.709125] hidraw: raw HID events driver (C) Jiri Kosina
+Dec  4 15:12:08 raspberrypi kernel: [    0.709318] usbcore: registered new interface driver usbhid
+Dec  4 15:12:08 raspberrypi kernel: [    0.709324] usbhid: USB HID core driver
+Dec  4 15:12:08 raspberrypi kernel: [    0.710080] vchiq: vchiq_init_state: slot_zero = (ptrval), is_master = 0
+Dec  4 15:12:08 raspberrypi kernel: [    0.711621] [vc_sm_connected_init]: start
+Dec  4 15:12:08 raspberrypi kernel: [    0.720263] [vc_sm_connected_init]: end - returning 0
+Dec  4 15:12:08 raspberrypi kernel: [    0.721343] Initializing XFRM netlink socket
+Dec  4 15:12:08 raspberrypi kernel: [    0.721367] NET: Registered protocol family 17
+Dec  4 15:12:08 raspberrypi kernel: [    0.721480] Key type dns_resolver registered
+Dec  4 15:12:08 raspberrypi kernel: [    0.722165] Registering SWP/SWPB emulation handler
+Dec  4 15:12:08 raspberrypi kernel: [    0.722860] registered taskstats version 1
+Dec  4 15:12:08 raspberrypi kernel: [    0.722876] Loading compiled-in X.509 certificates
+Dec  4 15:12:08 raspberrypi kernel: [    0.730139] uart-pl011 3f201000.serial: cts_event_workaround enabled
+Dec  4 15:12:08 raspberrypi kernel: [    0.730217] 3f201000.serial: ttyAMA0 at MMIO 0x3f201000 (irq = 81, base_baud = 0) is a PL011 rev2
+Dec  4 15:12:08 raspberrypi kernel: [    0.732187] mmc-bcm2835 3f300000.mmcnr: mmc_debug:0 mmc_debug2:0
+Dec  4 15:12:08 raspberrypi kernel: [    0.732199] mmc-bcm2835 3f300000.mmcnr: DMA channel allocated
+Dec  4 15:12:08 raspberrypi kernel: [    0.758386] sdhost: log_buf @ (ptrval) (fad13000)
+Dec  4 15:12:08 raspberrypi kernel: [    0.794611] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.796189] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.797769] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.800604] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+Dec  4 15:12:08 raspberrypi kernel: [    0.805390] mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+Dec  4 15:12:08 raspberrypi kernel: [    0.806676] of_cfs_init
+Dec  4 15:12:08 raspberrypi kernel: [    0.806778] of_cfs_init: OK
+Dec  4 15:12:08 raspberrypi kernel: [    0.807369] Waiting for root device PARTUUID=73528744-02...
+Dec  4 15:12:08 raspberrypi kernel: [    0.874043] random: fast init done
+Dec  4 15:12:08 raspberrypi kernel: [    0.878961] mmc0: host does not support reading read-only switch, assuming write-enable
+Dec  4 15:12:08 raspberrypi kernel: [    0.881907] mmc0: new high speed SDHC card at address 1388
+Dec  4 15:12:08 raspberrypi kernel: [    0.885344] mmc1: new high speed SDIO card at address 0001
+Dec  4 15:12:08 raspberrypi kernel: [    0.885897] mmcblk0: mmc0:1388 USD00 14.7 GiB
+Dec  4 15:12:08 raspberrypi kernel: [    0.887729]  mmcblk0: p1 p2
+Dec  4 15:12:08 raspberrypi kernel: [    0.902598] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Dec  4 15:12:08 raspberrypi kernel: [    0.902652] VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+Dec  4 15:12:08 raspberrypi kernel: [    0.903393] devtmpfs: mounted
+Dec  4 15:12:08 raspberrypi kernel: [    0.908727] Freeing unused kernel memory: 1024K
+Dec  4 15:12:08 raspberrypi kernel: [    0.921983] Indeed it is in host mode hprt0 = 00021501
+Dec  4 15:12:08 raspberrypi kernel: [    0.982389] Run /sbin/init as init process
+Dec  4 15:12:08 raspberrypi kernel: [    1.131851] usb 1-1: new high-speed USB device number 2 using dwc_otg
+Dec  4 15:12:08 raspberrypi kernel: [    1.131992] Indeed it is in host mode hprt0 = 00001101
+Dec  4 15:12:08 raspberrypi kernel: [    1.372126] usb 1-1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+Dec  4 15:12:08 raspberrypi kernel: [    1.372142] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec  4 15:12:08 raspberrypi kernel: [    1.372774] hub 1-1:1.0: USB hub found
+Dec  4 15:12:08 raspberrypi kernel: [    1.372862] hub 1-1:1.0: 4 ports detected
+Dec  4 15:12:08 raspberrypi kernel: [    1.691858] usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+Dec  4 15:12:08 raspberrypi kernel: [    1.822098] usb 1-1.1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+Dec  4 15:12:08 raspberrypi kernel: [    1.822113] usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec  4 15:12:08 raspberrypi kernel: [    1.822776] hub 1-1.1:1.0: USB hub found
+Dec  4 15:12:08 raspberrypi kernel: [    1.822866] hub 1-1.1:1.0: 3 ports detected
+Dec  4 15:12:08 raspberrypi kernel: [    2.175702] dwc_otg_handle_wakeup_detected_intr lxstate = 2
+Dec  4 15:12:08 raspberrypi kernel: [    2.354463] NET: Registered protocol family 10
+Dec  4 15:12:08 raspberrypi kernel: [    2.355754] Segment Routing with IPv6
+Dec  4 15:12:08 raspberrypi kernel: [    2.571926] usb 1-1.1.1: new high-speed USB device number 4 using dwc_otg
+Dec  4 15:12:08 raspberrypi kernel: [    2.712303] usb 1-1.1.1: New USB device found, idVendor=0424, idProduct=7800, bcdDevice= 3.00
+Dec  4 15:12:08 raspberrypi kernel: [    2.712319] usb 1-1.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec  4 15:12:08 raspberrypi kernel: [    2.977096] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): No External EEPROM. Setting MAC Speed
+Dec  4 15:12:08 raspberrypi kernel: [    2.978070] libphy: lan78xx-mdiobus: probed
+Dec  4 15:12:08 raspberrypi kernel: [    3.005883] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): int urb period 64
+Dec  4 15:12:08 raspberrypi kernel: [    3.690629] random: systemd: uninitialized urandom read (16 bytes read)
+Dec  4 15:12:08 raspberrypi kernel: [    3.702841] random: systemd: uninitialized urandom read (16 bytes read)
+Dec  4 15:12:08 raspberrypi kernel: [    3.703918] random: systemd: uninitialized urandom read (16 bytes read)
+Dec  4 15:12:08 raspberrypi kernel: [    3.923025] i2c /dev entries driver
+Dec  4 15:12:08 raspberrypi kernel: [    4.570918] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Dec  4 15:12:08 raspberrypi kernel: [    5.342500] vc_sm_cma: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:12:08 raspberrypi kernel: [    5.345048] bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+Dec  4 15:12:08 raspberrypi kernel: [    5.345062] [vc_sm_connected_init]: start
+Dec  4 15:12:08 raspberrypi kernel: [    5.350549] [vc_sm_connected_init]: installed successfully
+Dec  4 15:12:08 raspberrypi kernel: [    5.363629] media: Linux media interface: v0.10
+Dec  4 15:12:08 raspberrypi kernel: [    5.465929] videodev: Linux video capture interface: v2.00
+Dec  4 15:12:08 raspberrypi kernel: [    5.617522] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:12:08 raspberrypi kernel: [    5.619712] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:12:08 raspberrypi kernel: [    5.700732] bcm2835_v4l2: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:12:08 raspberrypi kernel: [    5.702756] snd_bcm2835: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:12:08 raspberrypi kernel: [    5.710987] bcm2835_codec: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:12:08 raspberrypi kernel: [    5.720236] bcm2835_audio soc:audio: card created with 8 channels
+Dec  4 15:12:08 raspberrypi kernel: [    5.727032] bcm2835-codec bcm2835-codec: Device registered as /dev/video10
+Dec  4 15:12:08 raspberrypi kernel: [    5.727071] bcm2835-codec bcm2835-codec: Loaded V4L2 decode
+Dec  4 15:12:08 raspberrypi kernel: [    5.734843] bcm2835-codec bcm2835-codec: Device registered as /dev/video11
+Dec  4 15:12:08 raspberrypi kernel: [    5.734880] bcm2835-codec bcm2835-codec: Loaded V4L2 encode
+Dec  4 15:12:08 raspberrypi kernel: [    5.739032] bcm2835-codec bcm2835-codec: Device registered as /dev/video12
+Dec  4 15:12:08 raspberrypi kernel: [    5.739079] bcm2835-codec bcm2835-codec: Loaded V4L2 isp
+Dec  4 15:12:08 raspberrypi kernel: [    5.906378] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Dec  4 15:12:08 raspberrypi kernel: [    6.101148] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Dec  4 15:12:08 raspberrypi kernel: [    6.292193] brcmfmac: F1 signature read @0x18000000=0x15264345
+Dec  4 15:12:08 raspberrypi kernel: [    6.302187] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+Dec  4 15:12:08 raspberrypi kernel: [    6.303002] usbcore: registered new interface driver brcmfmac
+Dec  4 15:12:08 raspberrypi kernel: [    6.569440] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+Dec  4 15:12:08 raspberrypi kernel: [    6.583810] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Feb 27 2018 03:15:32 version 7.45.154 (r684107 CY) FWID 01-4fbe0b04
+Dec  4 15:12:08 raspberrypi kernel: [    6.592783] random: crng init done
+Dec  4 15:12:08 raspberrypi kernel: [    6.592798] random: 7 urandom warning(s) missed due to ratelimiting
+Dec  4 15:12:08 raspberrypi kernel: [    9.241060] uart-pl011 3f201000.serial: no DMA platform data
+Dec  4 15:12:08 raspberrypi kernel: [    9.630827] 8021q: 802.1Q VLAN Support v1.8
+Dec  4 15:12:09 raspberrypi kernel: [   10.132936] Adding 102396k swap on /var/swap.  Priority:-2 extents:1 across:102396k SSFS
+Dec  4 15:12:09 raspberrypi kernel: [   10.404875] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+Dec  4 15:12:09 raspberrypi kernel: [   10.404907] brcmfmac: power management disabled
+Dec  4 15:12:10 raspberrypi kernel: [   11.085532] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Dec  4 15:12:10 raspberrypi kernel: [   11.085542] 8021q: adding VLAN 0 to HW filter on device eth0
+Dec  4 15:12:10 raspberrypi kernel: [   11.097800] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Dec  4 15:12:13 raspberrypi kernel: [   14.034021] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Dec  4 15:12:15 raspberrypi kernel: [   16.121214] ICMPv6: process `dhcpcd' is using deprecated sysctl (syscall) net.ipv6.neigh.wlan0.retrans_time - use net.ipv6.neigh.wlan0.retrans_time_ms instead
+Dec  4 15:12:15 raspberrypi kernel: [   16.178995] Bluetooth: Core ver 2.22
+Dec  4 15:12:15 raspberrypi kernel: [   16.179097] NET: Registered protocol family 31
+Dec  4 15:12:15 raspberrypi kernel: [   16.179104] Bluetooth: HCI device and connection manager initialized
+Dec  4 15:12:15 raspberrypi kernel: [   16.179128] Bluetooth: HCI socket layer initialized
+Dec  4 15:12:15 raspberrypi kernel: [   16.179141] Bluetooth: L2CAP socket layer initialized
+Dec  4 15:12:15 raspberrypi kernel: [   16.179182] Bluetooth: SCO socket layer initialized
+Dec  4 15:12:15 raspberrypi kernel: [   16.284796] Bluetooth: HCI UART driver ver 2.3
+Dec  4 15:12:15 raspberrypi kernel: [   16.284806] Bluetooth: HCI UART protocol H4 registered
+Dec  4 15:12:15 raspberrypi kernel: [   16.284849] Bluetooth: HCI UART protocol Three-wire (H5) registered
+Dec  4 15:12:15 raspberrypi kernel: [   16.284958] Bluetooth: HCI UART protocol Broadcom registered
+Dec  4 15:12:15 raspberrypi kernel: [   16.968740] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Dec  4 15:12:15 raspberrypi kernel: [   16.968758] Bluetooth: BNEP filters: protocol multicast
+Dec  4 15:12:15 raspberrypi kernel: [   16.968786] Bluetooth: BNEP socket layer initialized
+Dec  4 15:12:16 raspberrypi kernel: [   17.130768] Bluetooth: RFCOMM TTY layer initialized
+Dec  4 15:12:16 raspberrypi kernel: [   17.130789] Bluetooth: RFCOMM socket layer initialized
+Dec  4 15:12:16 raspberrypi kernel: [   17.130804] Bluetooth: RFCOMM ver 1.11
+Dec  4 15:12:19 raspberrypi kernel: [   20.732712] fuse init (API version 7.27)
+Dec  4 15:33:00 raspberrypi kernel: [  503.833871] Bluetooth: hci0: sending frame failed (-49)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Booting Linux on physical CPU 0x0
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Linux version 4.19.75-v7+ (dom@buildbot) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0-88-g8460611)) #1270 SMP Tue Sep 24 18:45:11 BST 2019
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] CPU: div instructions available: patching division code
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] OF: fdt: Machine model: Raspberry Pi 3 Model B Plus Rev 1.3
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Memory policy: Data cache writealloc
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] cma: Reserved 8 MiB at 0x3ac00000
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] On node 0 totalpages: 242688
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]   Normal zone: 2133 pages used for memmap
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]   Normal zone: 0 pages reserved
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]   Normal zone: 242688 pages, LIFO batch:63
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] random: get_random_bytes called from start_kernel+0xac/0x4b4 with crng_init=0
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] percpu: Embedded 17 pages/cpu s39488 r8192 d21952 u69632
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] pcpu-alloc: s39488 r8192 d21952 u69632 alloc=17*4096
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 240555
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Kernel command line: coherent_pool=1M 8250.nr_uarts=0 bcm2708_fb.fbwidth=656 bcm2708_fb.fbheight=416 bcm2708_fb.fbswap=1 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  dwc_otg.lpm_enable=0 console=ttyS0,115200 console=tty1 root=PARTUUID=73528744-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Memory: 939088K/970752K available (8192K kernel code, 629K rwdata, 2176K rodata, 1024K init, 821K bss, 23472K reserved, 8192K cma-reserved)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] Virtual kernel memory layout:
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]     vmalloc : 0xbb800000 - 0xff800000   (1088 MB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]     lowmem  : 0x80000000 - 0xbb400000   ( 948 MB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]     modules : 0x7f000000 - 0x80000000   (  16 MB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (9184 kB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   ( 630 kB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   ( 822 kB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] ftrace: allocating 26399 entries in 78 pages
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] rcu: Hierarchical RCU implementation.
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] arch_timer: cp15 timer(s) running at 19.20MHz (phys).
+Dec  4 15:33:09 raspberrypi kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+Dec  4 15:33:09 raspberrypi kernel: [    0.000007] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+Dec  4 15:33:09 raspberrypi kernel: [    0.000019] Switching to timer-based delay loop, resolution 52ns
+Dec  4 15:33:09 raspberrypi kernel: [    0.000283] Console: colour dummy device 80x30
+Dec  4 15:33:09 raspberrypi kernel: [    0.000301] console [tty1] enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.000345] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000362] pid_max: default: 32768 minimum: 301
+Dec  4 15:33:09 raspberrypi kernel: [    0.000702] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.000718] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.001630] CPU: Testing write buffer coherency: ok
+Dec  4 15:33:09 raspberrypi kernel: [    0.002095] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Dec  4 15:33:09 raspberrypi kernel: [    0.002745] Setting up static identity map for 0x100000 - 0x10003c
+Dec  4 15:33:09 raspberrypi kernel: [    0.002895] rcu: Hierarchical SRCU implementation.
+Dec  4 15:33:09 raspberrypi kernel: [    0.003692] smp: Bringing up secondary CPUs ...
+Dec  4 15:33:09 raspberrypi kernel: [    0.004533] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Dec  4 15:33:09 raspberrypi kernel: [    0.005460] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+Dec  4 15:33:09 raspberrypi kernel: [    0.006327] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+Dec  4 15:33:09 raspberrypi kernel: [    0.006452] smp: Brought up 1 node, 4 CPUs
+Dec  4 15:33:09 raspberrypi kernel: [    0.006464] SMP: Total of 4 processors activated (153.60 BogoMIPS).
+Dec  4 15:33:09 raspberrypi kernel: [    0.006470] CPU: All CPU(s) started in HYP mode.
+Dec  4 15:33:09 raspberrypi kernel: [    0.006475] CPU: Virtualization extensions available.
+Dec  4 15:33:09 raspberrypi kernel: [    0.007449] devtmpfs: initialized
+Dec  4 15:33:09 raspberrypi kernel: [    0.020804] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+Dec  4 15:33:09 raspberrypi kernel: [    0.021044] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Dec  4 15:33:09 raspberrypi kernel: [    0.021062] futex hash table entries: 1024 (order: 4, 65536 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.021659] pinctrl core: initialized pinctrl subsystem
+Dec  4 15:33:09 raspberrypi kernel: [    0.022513] NET: Registered protocol family 16
+Dec  4 15:33:09 raspberrypi kernel: [    0.025609] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+Dec  4 15:33:09 raspberrypi kernel: [    0.031359] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+Dec  4 15:33:09 raspberrypi kernel: [    0.031367] hw-breakpoint: maximum watchpoint size is 8 bytes.
+Dec  4 15:33:09 raspberrypi kernel: [    0.031574] Serial: AMBA PL011 UART driver
+Dec  4 15:33:09 raspberrypi kernel: [    0.033869] bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.068780] bcm2835-dma 3f007000.dma: DMA legacy API manager at (ptrval), dmachans=0x1
+Dec  4 15:33:09 raspberrypi kernel: [    0.070472] SCSI subsystem initialized
+Dec  4 15:33:09 raspberrypi kernel: [    0.070700] usbcore: registered new interface driver usbfs
+Dec  4 15:33:09 raspberrypi kernel: [    0.070754] usbcore: registered new interface driver hub
+Dec  4 15:33:09 raspberrypi kernel: [    0.070848] usbcore: registered new device driver usb
+Dec  4 15:33:09 raspberrypi kernel: [    0.090124] raspberrypi-firmware soc:firmware: Attached to firmware from 2019-09-24 17:37, variant start
+Dec  4 15:33:09 raspberrypi kernel: [    0.100397] raspberrypi-firmware soc:firmware: Firmware hash is 6820edeee4ef3891b95fc01cf02a7abd7ca52f17
+Dec  4 15:33:09 raspberrypi kernel: [    0.111815] clocksource: Switched to clocksource arch_sys_counter
+Dec  4 15:33:09 raspberrypi kernel: [    0.201310] VFS: Disk quotas dquot_6.6.0
+Dec  4 15:33:09 raspberrypi kernel: [    0.201392] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.201583] FS-Cache: Loaded
+Dec  4 15:33:09 raspberrypi kernel: [    0.201792] CacheFiles: Loaded
+Dec  4 15:33:09 raspberrypi kernel: [    0.211743] NET: Registered protocol family 2
+Dec  4 15:33:09 raspberrypi kernel: [    0.212540] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.212584] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.212693] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.212879] TCP: Hash tables configured (established 8192 bind 8192)
+Dec  4 15:33:09 raspberrypi kernel: [    0.213013] UDP hash table entries: 512 (order: 2, 16384 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.213059] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.213371] NET: Registered protocol family 1
+Dec  4 15:33:09 raspberrypi kernel: [    0.213958] RPC: Registered named UNIX socket transport module.
+Dec  4 15:33:09 raspberrypi kernel: [    0.213965] RPC: Registered udp transport module.
+Dec  4 15:33:09 raspberrypi kernel: [    0.213971] RPC: Registered tcp transport module.
+Dec  4 15:33:09 raspberrypi kernel: [    0.213976] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Dec  4 15:33:09 raspberrypi kernel: [    0.215717] hw perfevents: enabled with armv7_cortex_a7 PMU driver, 7 counters available
+Dec  4 15:33:09 raspberrypi kernel: [    0.218710] Initialise system trusted keyrings
+Dec  4 15:33:09 raspberrypi kernel: [    0.218887] workingset: timestamp_bits=14 max_order=18 bucket_order=4
+Dec  4 15:33:09 raspberrypi kernel: [    0.228688] FS-Cache: Netfs 'nfs' registered for caching
+Dec  4 15:33:09 raspberrypi kernel: [    0.229243] NFS: Registering the id_resolver key type
+Dec  4 15:33:09 raspberrypi kernel: [    0.229269] Key type id_resolver registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.229275] Key type id_legacy registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.229292] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Dec  4 15:33:09 raspberrypi kernel: [    0.231544] Key type asymmetric registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.231553] Asymmetric key parser 'x509' registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.231601] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+Dec  4 15:33:09 raspberrypi kernel: [    0.231764] io scheduler noop registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.231772] io scheduler deadline registered (default)
+Dec  4 15:33:09 raspberrypi kernel: [    0.232038] io scheduler cfq registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.232046] io scheduler mq-deadline registered (default)
+Dec  4 15:33:09 raspberrypi kernel: [    0.232052] io scheduler kyber registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.234257] bcm2708_fb soc:fb: FB found 1 display(s)
+Dec  4 15:33:09 raspberrypi kernel: [    0.243552] Console: switching to colour frame buffer device 82x26
+Dec  4 15:33:09 raspberrypi kernel: [    0.247985] bcm2708_fb soc:fb: Registered framebuffer for display 0, size 656x416
+Dec  4 15:33:09 raspberrypi kernel: [    0.250023] bcm2835-rng 3f104000.rng: hwrng registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.250332] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+Dec  4 15:33:09 raspberrypi kernel: [    0.250871] vc-sm: Videocore shared memory driver
+Dec  4 15:33:09 raspberrypi kernel: [    0.251184] gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+Dec  4 15:33:09 raspberrypi kernel: [    0.261948] brd: module loaded
+Dec  4 15:33:09 raspberrypi kernel: [    0.272093] loop: module loaded
+Dec  4 15:33:09 raspberrypi kernel: [    0.272676] Loading iSCSI transport class v2.0-870.
+Dec  4 15:33:09 raspberrypi kernel: [    0.273366] libphy: Fixed MDIO Bus: probed
+Dec  4 15:33:09 raspberrypi kernel: [    0.273474] usbcore: registered new interface driver lan78xx
+Dec  4 15:33:09 raspberrypi kernel: [    0.273530] usbcore: registered new interface driver smsc95xx
+Dec  4 15:33:09 raspberrypi kernel: [    0.273545] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Dec  4 15:33:09 raspberrypi kernel: [    0.301389] dwc_otg 3f980000.usb: base=(ptrval)
+Dec  4 15:33:09 raspberrypi kernel: [    0.501613] Core Release: 2.80a
+Dec  4 15:33:09 raspberrypi kernel: [    0.501624] Setting default values for core params
+Dec  4 15:33:09 raspberrypi kernel: [    0.501654] Finished setting default values for core params
+Dec  4 15:33:09 raspberrypi kernel: [    0.702006] Using Buffer DMA mode
+Dec  4 15:33:09 raspberrypi kernel: [    0.702013] Periodic Transfer Interrupt Enhancement - disabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.702019] Multiprocessor Interrupt Enhancement - disabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.702026] OTG VER PARAM: 0, OTG VER FLAG: 0
+Dec  4 15:33:09 raspberrypi kernel: [    0.702040] Dedicated Tx FIFOs mode
+Dec  4 15:33:09 raspberrypi kernel: [    0.702496] WARN::dwc_otg_hcd_init:1045: FIQ DMA bounce buffers: virt = bad14000 dma = 0xfad14000 len=9024
+Dec  4 15:33:09 raspberrypi kernel: [    0.702522] FIQ FSM acceleration enabled for :
+Dec  4 15:33:09 raspberrypi kernel: [    0.702522] Non-periodic Split Transactions
+Dec  4 15:33:09 raspberrypi kernel: [    0.702522] Periodic Split Transactions
+Dec  4 15:33:09 raspberrypi kernel: [    0.702522] High-Speed Isochronous Endpoints
+Dec  4 15:33:09 raspberrypi kernel: [    0.702522] Interrupt/Control Split Transaction hack enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.702529] dwc_otg: Microframe scheduler enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.702586] WARN::hcd_init_fiq:457: FIQ on core 1
+Dec  4 15:33:09 raspberrypi kernel: [    0.702598] WARN::hcd_init_fiq:458: FIQ ASM at 80655664 length 36
+Dec  4 15:33:09 raspberrypi kernel: [    0.702610] WARN::hcd_init_fiq:497: MPHI regs_base at bb810000
+Dec  4 15:33:09 raspberrypi kernel: [    0.702627] dwc_otg 3f980000.usb: DWC OTG Controller
+Dec  4 15:33:09 raspberrypi kernel: [    0.702660] dwc_otg 3f980000.usb: new USB bus registered, assigned bus number 1
+Dec  4 15:33:09 raspberrypi kernel: [    0.702695] dwc_otg 3f980000.usb: irq 56, io mem 0x00000000
+Dec  4 15:33:09 raspberrypi kernel: [    0.702742] Init: Port Power? op_state=1
+Dec  4 15:33:09 raspberrypi kernel: [    0.702748] Init: Power Port (0)
+Dec  4 15:33:09 raspberrypi kernel: [    0.703000] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+Dec  4 15:33:09 raspberrypi kernel: [    0.703012] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Dec  4 15:33:09 raspberrypi kernel: [    0.703021] usb usb1: Product: DWC OTG Controller
+Dec  4 15:33:09 raspberrypi kernel: [    0.703030] usb usb1: Manufacturer: Linux 4.19.75-v7+ dwc_otg_hcd
+Dec  4 15:33:09 raspberrypi kernel: [    0.703040] usb usb1: SerialNumber: 3f980000.usb
+Dec  4 15:33:09 raspberrypi kernel: [    0.703653] hub 1-0:1.0: USB hub found
+Dec  4 15:33:09 raspberrypi kernel: [    0.703699] hub 1-0:1.0: 1 port detected
+Dec  4 15:33:09 raspberrypi kernel: [    0.704279] dwc_otg: FIQ enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.704284] dwc_otg: NAK holdoff enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.704290] dwc_otg: FIQ split-transaction FSM enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.704301] Module dwc_common_port init
+Dec  4 15:33:09 raspberrypi kernel: [    0.704562] usbcore: registered new interface driver usb-storage
+Dec  4 15:33:09 raspberrypi kernel: [    0.704733] mousedev: PS/2 mouse device common for all mice
+Dec  4 15:33:09 raspberrypi kernel: [    0.705562] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+Dec  4 15:33:09 raspberrypi kernel: [    0.705797] bcm2835-cpufreq: min=600000 max=1400000
+Dec  4 15:33:09 raspberrypi kernel: [    0.706253] sdhci: Secure Digital Host Controller Interface driver
+Dec  4 15:33:09 raspberrypi kernel: [    0.706258] sdhci: Copyright(c) Pierre Ossman
+Dec  4 15:33:09 raspberrypi kernel: [    0.706626] mmc-bcm2835 3f300000.mmcnr: could not get clk, deferring probe
+Dec  4 15:33:09 raspberrypi kernel: [    0.707007] sdhost-bcm2835 3f202000.mmc: could not get clk, deferring probe
+Dec  4 15:33:09 raspberrypi kernel: [    0.707132] sdhci-pltfm: SDHCI platform and OF driver helper
+Dec  4 15:33:09 raspberrypi kernel: [    0.708684] ledtrig-cpu: registered to indicate activity on CPUs
+Dec  4 15:33:09 raspberrypi kernel: [    0.708833] hidraw: raw HID events driver (C) Jiri Kosina
+Dec  4 15:33:09 raspberrypi kernel: [    0.709030] usbcore: registered new interface driver usbhid
+Dec  4 15:33:09 raspberrypi kernel: [    0.709035] usbhid: USB HID core driver
+Dec  4 15:33:09 raspberrypi kernel: [    0.709796] vchiq: vchiq_init_state: slot_zero = (ptrval), is_master = 0
+Dec  4 15:33:09 raspberrypi kernel: [    0.711326] [vc_sm_connected_init]: start
+Dec  4 15:33:09 raspberrypi kernel: [    0.719912] [vc_sm_connected_init]: end - returning 0
+Dec  4 15:33:09 raspberrypi kernel: [    0.720995] Initializing XFRM netlink socket
+Dec  4 15:33:09 raspberrypi kernel: [    0.721021] NET: Registered protocol family 17
+Dec  4 15:33:09 raspberrypi kernel: [    0.721131] Key type dns_resolver registered
+Dec  4 15:33:09 raspberrypi kernel: [    0.721715] Registering SWP/SWPB emulation handler
+Dec  4 15:33:09 raspberrypi kernel: [    0.722520] registered taskstats version 1
+Dec  4 15:33:09 raspberrypi kernel: [    0.722537] Loading compiled-in X.509 certificates
+Dec  4 15:33:09 raspberrypi kernel: [    0.729811] uart-pl011 3f201000.serial: cts_event_workaround enabled
+Dec  4 15:33:09 raspberrypi kernel: [    0.729894] 3f201000.serial: ttyAMA0 at MMIO 0x3f201000 (irq = 81, base_baud = 0) is a PL011 rev2
+Dec  4 15:33:09 raspberrypi kernel: [    0.731797] mmc-bcm2835 3f300000.mmcnr: mmc_debug:0 mmc_debug2:0
+Dec  4 15:33:09 raspberrypi kernel: [    0.731862] mmc-bcm2835 3f300000.mmcnr: DMA channel allocated
+Dec  4 15:33:09 raspberrypi kernel: [    0.758032] sdhost: log_buf @ (ptrval) (fad13000)
+Dec  4 15:33:09 raspberrypi kernel: [    0.794375] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.795954] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.797533] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.800364] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+Dec  4 15:33:09 raspberrypi kernel: [    0.806490] mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+Dec  4 15:33:09 raspberrypi kernel: [    0.807778] of_cfs_init
+Dec  4 15:33:09 raspberrypi kernel: [    0.807881] of_cfs_init: OK
+Dec  4 15:33:09 raspberrypi kernel: [    0.808482] Waiting for root device PARTUUID=73528744-02...
+Dec  4 15:33:09 raspberrypi kernel: [    0.873997] random: fast init done
+Dec  4 15:33:09 raspberrypi kernel: [    0.879007] mmc0: host does not support reading read-only switch, assuming write-enable
+Dec  4 15:33:09 raspberrypi kernel: [    0.881954] mmc0: new high speed SDHC card at address 1388
+Dec  4 15:33:09 raspberrypi kernel: [    0.885399] mmc1: new high speed SDIO card at address 0001
+Dec  4 15:33:09 raspberrypi kernel: [    0.885959] mmcblk0: mmc0:1388 USD00 14.7 GiB
+Dec  4 15:33:09 raspberrypi kernel: [    0.887833]  mmcblk0: p1 p2
+Dec  4 15:33:09 raspberrypi kernel: [    0.902647] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Dec  4 15:33:09 raspberrypi kernel: [    0.902701] VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+Dec  4 15:33:09 raspberrypi kernel: [    0.903455] devtmpfs: mounted
+Dec  4 15:33:09 raspberrypi kernel: [    0.908789] Freeing unused kernel memory: 1024K
+Dec  4 15:33:09 raspberrypi kernel: [    0.921998] Indeed it is in host mode hprt0 = 00021501
+Dec  4 15:33:09 raspberrypi kernel: [    0.982404] Run /sbin/init as init process
+Dec  4 15:33:09 raspberrypi kernel: [    1.131883] usb 1-1: new high-speed USB device number 2 using dwc_otg
+Dec  4 15:33:09 raspberrypi kernel: [    1.132022] Indeed it is in host mode hprt0 = 00001101
+Dec  4 15:33:09 raspberrypi kernel: [    1.372180] usb 1-1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+Dec  4 15:33:09 raspberrypi kernel: [    1.372195] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec  4 15:33:09 raspberrypi kernel: [    1.372845] hub 1-1:1.0: USB hub found
+Dec  4 15:33:09 raspberrypi kernel: [    1.372932] hub 1-1:1.0: 4 ports detected
+Dec  4 15:33:09 raspberrypi kernel: [    1.691872] usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+Dec  4 15:33:09 raspberrypi kernel: [    1.745884] NET: Registered protocol family 10
+Dec  4 15:33:09 raspberrypi kernel: [    1.747158] Segment Routing with IPv6
+Dec  4 15:33:09 raspberrypi kernel: [    1.822209] usb 1-1.1: New USB device found, idVendor=0424, idProduct=2514, bcdDevice= b.b3
+Dec  4 15:33:09 raspberrypi kernel: [    1.822224] usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec  4 15:33:09 raspberrypi kernel: [    1.822847] hub 1-1.1:1.0: USB hub found
+Dec  4 15:33:09 raspberrypi kernel: [    1.822936] hub 1-1.1:1.0: 3 ports detected
+Dec  4 15:33:09 raspberrypi kernel: [    2.175757] dwc_otg_handle_wakeup_detected_intr lxstate = 2
+Dec  4 15:33:09 raspberrypi kernel: [    2.571875] usb 1-1.1.1: new high-speed USB device number 4 using dwc_otg
+Dec  4 15:33:09 raspberrypi kernel: [    2.676857] random: systemd: uninitialized urandom read (16 bytes read)
+Dec  4 15:33:09 raspberrypi kernel: [    2.689534] random: systemd: uninitialized urandom read (16 bytes read)
+Dec  4 15:33:09 raspberrypi kernel: [    2.690450] random: systemd: uninitialized urandom read (16 bytes read)
+Dec  4 15:33:09 raspberrypi kernel: [    2.702619] usb 1-1.1.1: New USB device found, idVendor=0424, idProduct=7800, bcdDevice= 3.00
+Dec  4 15:33:09 raspberrypi kernel: [    2.702650] usb 1-1.1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Dec  4 15:33:09 raspberrypi kernel: [    2.968993] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): No External EEPROM. Setting MAC Speed
+Dec  4 15:33:09 raspberrypi kernel: [    2.969978] libphy: lan78xx-mdiobus: probed
+Dec  4 15:33:09 raspberrypi kernel: [    2.993356] lan78xx 1-1.1.1:1.0 (unnamed net_device) (uninitialized): int urb period 64
+Dec  4 15:33:09 raspberrypi kernel: [    3.025648] i2c /dev entries driver
+Dec  4 15:33:09 raspberrypi kernel: [    3.623455] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Dec  4 15:33:09 raspberrypi kernel: [    5.037996] vc_sm_cma: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:33:09 raspberrypi kernel: [    5.040860] bcm2835_vc_sm_cma_probe: Videocore shared memory driver
+Dec  4 15:33:09 raspberrypi kernel: [    5.040883] [vc_sm_connected_init]: start
+Dec  4 15:33:09 raspberrypi kernel: [    5.045173] media: Linux media interface: v0.10
+Dec  4 15:33:09 raspberrypi kernel: [    5.049868] [vc_sm_connected_init]: installed successfully
+Dec  4 15:33:09 raspberrypi kernel: [    5.128750] videodev: Linux video capture interface: v2.00
+Dec  4 15:33:09 raspberrypi kernel: [    5.237963] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:33:09 raspberrypi kernel: [    5.242998] bcm2835_mmal_vchiq: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:33:09 raspberrypi kernel: [    5.294337] snd_bcm2835: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:33:09 raspberrypi kernel: [    5.297750] bcm2835_v4l2: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:33:09 raspberrypi kernel: [    5.306961] bcm2835_codec: module is from the staging directory, the quality is unknown, you have been warned.
+Dec  4 15:33:09 raspberrypi kernel: [    5.316706] bcm2835_audio soc:audio: card created with 8 channels
+Dec  4 15:33:09 raspberrypi kernel: [    5.324826] bcm2835-codec bcm2835-codec: Device registered as /dev/video10
+Dec  4 15:33:09 raspberrypi kernel: [    5.324867] bcm2835-codec bcm2835-codec: Loaded V4L2 decode
+Dec  4 15:33:09 raspberrypi kernel: [    5.334307] bcm2835-codec bcm2835-codec: Device registered as /dev/video11
+Dec  4 15:33:09 raspberrypi kernel: [    5.334341] bcm2835-codec bcm2835-codec: Loaded V4L2 encode
+Dec  4 15:33:09 raspberrypi kernel: [    5.342884] bcm2835-codec bcm2835-codec: Device registered as /dev/video12
+Dec  4 15:33:09 raspberrypi kernel: [    5.342924] bcm2835-codec bcm2835-codec: Loaded V4L2 isp
+Dec  4 15:33:09 raspberrypi kernel: [    5.440838] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Dec  4 15:33:09 raspberrypi kernel: [    5.599628] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Dec  4 15:33:09 raspberrypi kernel: [    5.706875] brcmfmac: F1 signature read @0x18000000=0x15264345
+Dec  4 15:33:09 raspberrypi kernel: [    5.712826] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+Dec  4 15:33:09 raspberrypi kernel: [    5.713317] usbcore: registered new interface driver brcmfmac
+Dec  4 15:33:09 raspberrypi kernel: [    5.972484] random: crng init done
+Dec  4 15:33:09 raspberrypi kernel: [    5.972497] random: 7 urandom warning(s) missed due to ratelimiting
+Dec  4 15:33:09 raspberrypi kernel: [    5.974844] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+Dec  4 15:33:09 raspberrypi kernel: [    6.038497] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Feb 27 2018 03:15:32 version 7.45.154 (r684107 CY) FWID 01-4fbe0b04
+Dec  4 15:33:09 raspberrypi kernel: [    8.287891] uart-pl011 3f201000.serial: no DMA platform data
+Dec  4 15:33:09 raspberrypi kernel: [    8.769265] 8021q: 802.1Q VLAN Support v1.8
+Dec  4 15:33:10 raspberrypi kernel: [    9.282069] Adding 102396k swap on /var/swap.  Priority:-2 extents:1 across:102396k SSFS
+Dec  4 15:33:10 raspberrypi kernel: [    9.384231] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+Dec  4 15:33:10 raspberrypi kernel: [    9.384244] brcmfmac: power management disabled
+Dec  4 15:33:10 raspberrypi kernel: [    9.909734] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Dec  4 15:33:10 raspberrypi kernel: [    9.909750] 8021q: adding VLAN 0 to HW filter on device eth0
+Dec  4 15:33:10 raspberrypi kernel: [    9.919352] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Dec  4 15:33:13 raspberrypi kernel: [   12.939358] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Dec  4 15:33:16 raspberrypi kernel: [   15.169867] Bluetooth: Core ver 2.22
+Dec  4 15:33:16 raspberrypi kernel: [   15.169980] NET: Registered protocol family 31
+Dec  4 15:33:16 raspberrypi kernel: [   15.169987] Bluetooth: HCI device and connection manager initialized
+Dec  4 15:33:16 raspberrypi kernel: [   15.170011] Bluetooth: HCI socket layer initialized
+Dec  4 15:33:16 raspberrypi kernel: [   15.170024] Bluetooth: L2CAP socket layer initialized
+Dec  4 15:33:16 raspberrypi kernel: [   15.170067] Bluetooth: SCO socket layer initialized
+Dec  4 15:33:16 raspberrypi kernel: [   15.278186] Bluetooth: HCI UART driver ver 2.3
+Dec  4 15:33:16 raspberrypi kernel: [   15.278201] Bluetooth: HCI UART protocol H4 registered
+Dec  4 15:33:16 raspberrypi kernel: [   15.278297] Bluetooth: HCI UART protocol Three-wire (H5) registered
+Dec  4 15:33:16 raspberrypi kernel: [   15.278512] Bluetooth: HCI UART protocol Broadcom registered
+Dec  4 15:33:17 raspberrypi kernel: [   16.116451] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Dec  4 15:33:17 raspberrypi kernel: [   16.116466] Bluetooth: BNEP filters: protocol multicast
+Dec  4 15:33:17 raspberrypi kernel: [   16.116492] Bluetooth: BNEP socket layer initialized
+Dec  4 15:33:17 raspberrypi kernel: [   16.232045] Bluetooth: RFCOMM TTY layer initialized
+Dec  4 15:33:17 raspberrypi kernel: [   16.232079] Bluetooth: RFCOMM socket layer initialized
+Dec  4 15:33:17 raspberrypi kernel: [   16.232114] Bluetooth: RFCOMM ver 1.11
+Dec  4 15:33:20 raspberrypi kernel: [   19.925893] fuse init (API version 7.27)
