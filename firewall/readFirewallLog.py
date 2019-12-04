@@ -10,7 +10,7 @@ def main():
 
     # open firewall.log and firewallLog.txt file
     firewallLog = open("../firewall/firewall.log", "r")
-    firewallLogTxt = open("../firewall/firewallLog.txt", "a")
+    firewallLogTxt = open("../firewall/firewallLog.txt", "w")
     currentFirewallLogTxt = open("../firewall/currentFirewallLog.txt", "w")
 
     # initialize today's date
@@ -19,12 +19,18 @@ def main():
     date = date.split("-") # split string into list
     month = date[0] # get the month
     day = date[1] # get the day of the month
-    date = month + " " + day # prepare string to get today's logs
+    day = int(day) # convert day to int for if statement
+    if (day < 10): # day is a single digit
+        day = str(day) # convert day back to str for date string
+        date = month + "  " + day # prepare string to get today's logs (Jan  1)
+    else:
+        day = str(day) # convert day back to str for date string
+        date = month + " " + day # prepare string to get today's logs(Jan 21)
 
     warnings = []
 
     # read each line of firewall.log
-    for line in firewallLog:
+    for line in reversed(list(firewallLog)):
         log = line.strip() # remove whitespace
         log = log.split("]") # split string into list
         if (len(log) > 1): # log isn't just a timestamp
