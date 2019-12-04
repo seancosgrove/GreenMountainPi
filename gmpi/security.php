@@ -21,18 +21,18 @@ include "top.php"
             </div>
             <div class="col-md-9">
                 <?php
-                $IPtxt = "/~/../../var/www/network/IP.txt";
-                $IPfile = fopen($IPtxt,"r") or die("Unable to open file.");
-                echo fread($IPfile,filesize($IPtxt,"r"));
-                if ($IPfile) {
-                    while (($line = fgets($IPfile)) !== false) {
+                $firewallLogTxt = "/~/../../var/www/firewall/currentFirewallLog.txt";
+                $firewallLogFile = fopen($firewallLogTxt,"r") or die("Unable to open file.");
+                echo fread($firewallLogFile,filesize($firewallLogTxt,"r"));
+                if ($firewallLogFile) {
+                    while (($line = fgets($firewallLogFile)) !== false) {
                         echo "<p>";
                         echo $line;
                         echo "</p>";
                     }
-                    fclose($IPfile);
+                    fclose($firewallLogFile);
                 } else {
-                    echo "Unable to open IP.txt";
+                    echo "Unable to open currentFirewallLog.txt";
                 }
                 ?>
             </div>
