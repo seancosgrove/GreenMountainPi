@@ -16,6 +16,7 @@ def main():
     firewallLog = open("../firewall/firewall.log", "r") # open firewall.log for reading
     firewallLogTxt = open("../firewall/firewallLog.txt", "w") # open firewallLog.txt for writing
     currentFirewallLogTxt = open("../firewall/currentFirewallLog.txt", "w") # open currentFirewallLog.txt for writing
+    firewallLogWarnings = open("../firewall/firewallLogWarnings.txt", "w") # open firewallLogWarnings.txt
 
     # initialize today's date
     today = datetime.datetime.now() # get today's date
@@ -54,6 +55,7 @@ def main():
                 currentFirewallLogTxt.write(logLine + "\n") # write shortened log line to file
             if (timestamp.startswith(date) and message.startswith("WARN")): # get warnings from today
                 warnings.append(logLine) # append warnings to list
+                firewallLogWarnings.write(logLine + "\n") # write log line to warnings file
 
     # print warnings if any
     print ("|==============================|") # print to terminal

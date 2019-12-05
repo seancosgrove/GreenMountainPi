@@ -12,8 +12,9 @@ def main():
     printCooldown = 1 # cooldown in between print statements
 
     # open log files
-    rootkitHunterLog = open("../anti/rkhunter.log", "r") # get root to rkhunter.log
-    rootkitHunterLogTxt = open("../anti/rootkitHunterLog.txt", "w") # get root to rookitHunterLog.txt
+    rootkitHunterLog = open("../anti/rkhunter.log", "r") # open rkhunter.log
+    rootkitHunterLogTxt = open("../anti/rootkitHunterLog.txt", "w") # open rookitHunterLog.txt
+    rootkitHunterLogWarnings = open("../anti/rootkitHunterLogWarnings.txt", "w") # open rootkitHunterLogWarnings.txt
 
     warnings = [] # initialize empty array for warnings
 
@@ -25,7 +26,10 @@ def main():
             timestamp = log[0] # initialize timestamp string
             message = log[1] # initialize message string
             logLine = message.strip() # remove whitespace
-            rootkitHunterLogTxt.write(logLine + "\n") # write shortened log line to file
+            if (logLine.endswith("[ Warning ]")): # logLine contains a warning
+                warnings.append(logLine) # append logLine to wanrings array
+                rootkitHunterLogWarnings.write(logLine + "\n") # write log line to warnings file
+            rootkitHunterLogTxt.write(logLine + "\n") # write log line to file
 
     # print warnings if any
     print ("|==============================|") # print to terminal
