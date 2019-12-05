@@ -4,18 +4,31 @@
 # nmap.py
 
 import os
+import time
 
 def main():
 
-    # run nmap os command with connected network inet
-    networkTxt = open("../network/network.txt","r") # open network.txt file with connected network inet
+    # initialize cooldown variables
+    cmdCooldown = 3 # cooldown in between os commands
+    printCooldown = 1 # cooldown in between print statements
+
+    # get connected inet address
+    networkTxt = open("../network/network.txt","r") # open network.txt file
     inet = networkTxt.read() # read file into string
-    cmd = ("nmap --script=http-title -oN ../network/nmapCapture.txt " + inet) # create string for os command
-    os.system (cmd) # execute os command
-    print("|==============================|")
-    print("Scanning UDP ports for possible DDOS attacks...")
-    print("|==============================|")
-    cmd2 = ("nmap -sU -A -PN -n -pU:19,53,123,161 -script=ntp-monlist,dns-recursion,snmp-sysdescr -oN ../network/nmapScan.txt " + inet)
-    os.system (cmd2)
+    inet = inet.strip() # remove whitespace
+
+    # execute basic nmap scan of inet and http server
+    nmapCaptureCmd = ("nmap --script=http-title -oN ../network/nmapCapture.txt " + inet) # prepare os command
+    os.system (nmapCaptureCmd) # execute os command
+    time.sleep (cmdCooldown) # command cooldown
+    print("|==============================|") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+
+    # execute nmap scan of UDP ports to look for DDOS vulnerabilities
+    print("Scanning UDP ports for possible DDOS attacks...") # print to terminal
+    print("|==============================|") # print to terminal
+    nmapScanCmd = ("nmap -sU -A -PN -n -pU:19,53,123,161 -script=ntp-monlist,dns-recursion,snmp-sysdescr -oN ../network/nmapScan.txt " + inet) # prepare os command
+    os.system (nmapScanCmd) # execute os command
+    time.sleep(cmdCooldown) # command cooldown
 
 main()

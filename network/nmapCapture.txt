@@ -1,10 +1,10 @@
-# Nmap 7.70 scan initiated Wed Dec  4 22:18:53 2019 as: nmap --script=http-title -oN ../network/nmapCapture.txt 192.168.1.16
+# Nmap 7.70 scan initiated Wed Dec  4 22:39:10 2019 as: nmap --script=http-title -oN ../network/nmapCapture.txt 192.168.1.16
 Nmap scan report for 192.168.1.16
-Host is up (0.000062s latency).
+Host is up (0.000060s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
 |_http-title: Green Mountain Pi
 
-# Nmap done at Wed Dec  4 22:18:59 2019 -- 1 IP address (1 host up) scanned in 5.62 seconds
+# Nmap done at Wed Dec  4 22:39:14 2019 -- 1 IP address (1 host up) scanned in 4.63 seconds

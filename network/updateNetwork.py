@@ -9,36 +9,37 @@ import time
 def main():
 
     # initialize cooldown variables
-    cmdCooldown = 3 # command cooldown
-    printCooldown = 1 # print cooldown
+    cmdCooldown = 3 # cooldown in between os commands
+    printCooldown = 1 # cooldown in between print statements
 
-    # get connected inet address for print message
+    # get connected inet address
     networkTxt = open("../network/network.txt","r") # open network.txt file
     inet = networkTxt.read() # read file into string
     inet = inet.strip() # strip whitespace
 
-    # initialize command strings to run python
-    IPcmd = "python3 ../network/IP.py"
-    nmapCmd = "python3 ../network/nmap.py"
-
     # execute IP.py
-    print("Scanning for networks...")
-    time.sleep(printCooldown)
-    print("|==============================|")
-    os.system(IPcmd)
-    print("|==============================|")
-    print("Networks located.")
-    time.sleep(printCooldown)
+    IPpy = "../network/IP.py" # get path to IP.py
+    IPcmd = "python3 " + IPpy # prepare os command
+    print("Scanning for networks...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    print("|==============================|") # print to terminal
+    os.system(IPcmd) # run os command
     time.sleep(cmdCooldown) # command cooldown
+    print("|==============================|") # print to terminal
+    print("Networks located.") # print to terminal
+    time.sleep(printCooldown) # print cooldown
 
     # execute nmap.py
-    print("Executing nmap scan for " + inet + "...")
-    time.sleep(printCooldown)
-    print("|==============================|")
-    os.system(nmapCmd)
-    print("|==============================|")
+    nmapPy = "../network/nmap.py" # get path to nmap.py
+    nmapCmd = "python3 " + nmapPy # prepare os command
+    print("Executing nmap scan for " + inet + "...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    print("|==============================|") # print to terminal
+    os.system(nmapCmd) # run os command
+    time.sleep(cmdCooldown) # command cooldown
+    print("|==============================|") # print to terminal
     print("Finished nmap scan.") # build success
-    time.sleep(printCooldown)
+    time.sleep(printCooldown) # print cooldown
 
 main()
 

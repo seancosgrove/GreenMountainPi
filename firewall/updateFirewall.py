@@ -8,26 +8,26 @@ import time
 
 def main():
 
-    # initialize cooldown in between commands
-    cmdCooldown = 3
-    printCooldown = 1
-
-    # initialize command strings to run python
-    getFirewallLogCmd = "python3 ../firewall/getFirewallLog.py"
-    readFirewallLogCmd = "python3 ../firewall/readFirewallLog.py"
+    # initialize cooldown variables
+    cmdCooldown = 3 # cooldown in between os commands
+    printCooldown = 1 # cooldown in between print statements
 
     # execute getFirewallLog.py
-    print("Getting firewall.log...")
-    time.sleep(printCooldown)
-    os.system(getFirewallLogCmd)
+    getFirewallLog = "../firewall/getFirewallLog.py" # get path to getFirewallLog.py
+    getFirewallLogCmd = "python3 " + getFirewallLog # prepare os command
+    print("Getting firewall.log...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    os.system(getFirewallLogCmd) # run os command
     time.sleep(cmdCooldown) # command cooldown
 
     # execute readFirewallLog.py
-    print("Reading to firewallLog.txt and currentFirewallLog.txt...")
-    time.sleep(printCooldown)
-    os.system(readFirewallLogCmd)
-    time.sleep(cmdCooldown)
+    readFirewallLog = "../firewall/readFirewallLog.py" # get path to readFirewallLog.py
+    readFirewallLogCmd = "python3 " + readFirewallLog # prepare os command
+    print("Reading to firewallLog.txt and currentFirewallLog.txt...")  # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    os.system(readFirewallLogCmd) # run os command
+    time.sleep(cmdCooldown) # command cooldown
     print("Finished writing to log text files") # build success
-    time.sleep(printCooldown)
+    time.sleep(printCooldown) # print cooldown
 
 main()

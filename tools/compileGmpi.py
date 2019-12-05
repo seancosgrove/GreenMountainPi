@@ -9,12 +9,13 @@ import time
 def main():
 
     # initialize cooldown variables
-    cmdCooldown = 3 # cooldown in between os command
+    cmdCooldown = 3 # cooldown in between os commands
     printCooldown = 1 # cooldown in between print statements
 
-    # get connect inet address
-    networkTxt = open("../network/network.txt", "r") # open network.txt file with connected network inet
+    # get connected inet address
+    networkTxt = open("../network/network.txt", "r") # open network.txt file
     inet = networkTxt.read() # read file into string
+    inet = inet.strip() # remove whitespace
 
     # execute updateNetwork.py
     updateNetwork = "../network/updateNetwork.py" # get path to updateNetwork.py
