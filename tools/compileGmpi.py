@@ -47,6 +47,16 @@ def main():
     print("Antimalware updated") # print to terminal
     time.sleep(printCooldown) # print cooldown
 
+    # execute repoToWeb.py
+    repoToWeb = "../tools/repoToWeb.py" # get path to repoToWeb.py
+    repoToWebCmd = "python3 " + repoToWeb # prepare os command
+    print("Copying files to web server...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    os.system(repoToWebCmd) # run os command
+    time.sleep(cmdCooldown) # command cooldown
+    print("Web server updated") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+
     # build success message
     print("|===== GMPI BUILD SUCCESS =====|")
     print("| Visit the Green Mountain Pi  |")

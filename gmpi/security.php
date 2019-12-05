@@ -48,7 +48,7 @@ include "top.php"
                     echo "Unable to open currentFirewallLog.txt";
                 }
                 ?>
-            </div>
+        </div>
         <hr>
         <div class="row justify-content-md-center">
             <div class="col-md-3">
@@ -73,6 +73,28 @@ include "top.php"
                 echo "Unable to open rootkitHunterLog.txt";
             }
             ?>
+        </div>
+        <hr>
+        <div class="row justify-content-md-center">
+            <div class="col-md-3">
+                <h2>Nmap Scan</h2>
+            </div>
+            <div class="col-md-9">
+                <?php
+                $nmapScan = "/~/../../var/www/network/nmapScanLog.txt";
+                $nmapFile = fopen($nmapScan,"r") or die("Unable to open file.");
+                echo fread($nmapFile,filesize($nmapScan,"r"));
+                if ($nmapFile) {
+                    while (($line = fgets($nmapFile)) !== false) {
+                        echo "<p>";
+                        echo $line;
+                        echo "</p>";
+                    }
+                    fclose($nmapFile);
+                } else {
+                    echo "Unable to open nmapScan.txt";
+                }
+                ?>
             </div>
         </div>
     </div>

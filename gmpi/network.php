@@ -44,7 +44,7 @@ include "top.php";
             </div>
             <div class="col-md-9">
                 <?php
-                $nmapCapture = "/~/../../var/www/network/nmapCapture.txt";
+                $nmapCapture = "/~/../../var/www/network/nmapCaptureLog.txt";
                 $nmapFile = fopen($nmapCapture,"r") or die("Unable to open file.");
                 echo fread($nmapFile,filesize($nmapCapture,"r"));
                 if ($nmapFile) {

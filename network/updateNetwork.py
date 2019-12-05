@@ -38,7 +38,17 @@ def main():
     os.system(nmapCmd) # run os command
     time.sleep(cmdCooldown) # command cooldown
     print("|==============================|") # print to terminal
-    print("Finished nmap scan.") # build success
+    print("Finished nmap scan") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+
+    # execute readNmap.py
+    readNmapPy = "../network/readNmap.py" # get path to readNmap.py
+    readNmapCmd = "python3 " + readNmapPy # prepare os command
+    print("Reading to nmapCaptureLog.txt and nmapScanLog.txt...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    os.system(readNmapCmd) # run os command
+    time.sleep(cmdCooldown) # command cooldown
+    print("Finished writing to log text files") # build success
     time.sleep(printCooldown) # print cooldown
 
 main()

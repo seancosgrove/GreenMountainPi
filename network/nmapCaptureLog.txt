@@ -1,4 +1,4 @@
-# Nmap 7.70 scan initiated Thu Dec  5 00:02:51 2019 as: nmap --script=http-title -oN ../network/nmapCapture.txt 192.168.1.16
+# Nmap 7.70 scan initiated Thu Dec  5 00:02:51 2019
 Nmap scan report for 192.168.1.16
 Host is up (0.000063s latency).
 Not shown: 998 closed ports

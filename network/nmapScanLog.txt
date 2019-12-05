@@ -1,4 +1,4 @@
-# Nmap 7.70 scan initiated Thu Dec  5 00:03:01 2019 as: nmap -sU -A -PN -n -pU:19,53,123,161 -script=ntp-monlist,dns-recursion,snmp-sysdescr -oN ../network/nmapScan.txt 192.168.1.16
+# Nmap 7.70 scan initiated Thu Dec  5 00:03:01 2019
 Nmap scan report for 192.168.1.16
 Host is up (0.00011s latency).
 
