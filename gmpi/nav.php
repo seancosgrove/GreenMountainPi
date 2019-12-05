@@ -12,9 +12,5 @@
         	<a class="nav-link" href="security.php">Security</a>
         </li>
 
-	<li class="nav-item">
-		<a class="nav-link" href="surveillance.php">Surveillance</a>
-	</li>
-
 </ul>
 <hr>

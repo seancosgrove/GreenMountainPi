@@ -30,6 +30,15 @@ def main():
     time.sleep(cmdCooldown)
     print("Firewall updated")
     time.sleep(printCooldown)
+
+    updateAntimalware = "../anti/updateAntimalware.py"
+    antiCmd = "sudo python3 " + updateAntimalware
+    print("Updating antimalware data...")
+    time.sleep(printCooldown)
+    os.system(antiCmd)
+    time.sleep(cmdCooldown)
+    print("Antimalware updated")
+    time.sleep(printCooldown)
     print("|===== GMPI BUILD SUCCESS =====|") # build success
 
 main()

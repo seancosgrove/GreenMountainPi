@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(orange 426px, green 100px);
+    background: linear-gradient(orange 100px, green 100px);
 }
 
 .jumbotron {
@@ -120,6 +120,8 @@ a:hover {
 }
 
 .scrollBar {
-    position: absolute;
+    position: relative;
     overflow-y: scroll;
+    max-width: 1125px;
+    max-height: 420px;
 }

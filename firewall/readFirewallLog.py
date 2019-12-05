@@ -51,10 +51,12 @@ def main():
             if (timestamp.startswith(date) and message.startswith("WARN")): # get warnings from today
                 warnings.append(logLine) # append warnings to list
 
+    print ("|==============================|")
     print ("Warnings from today:")
     if not warnings:
         print("Nothing to report")
     for warning in warnings:
         print(warning)
+    print ("|==============================|")
 
 main()
