@@ -31,6 +31,19 @@ def main():
     print("Firewall updated")
     time.sleep(printCooldown)
 
+    print("Would you like to run an antimalware scan? (y/n)")
+    response = str(input())
+    if (str.lower(response) == "y"):
+        print("|==============================|")
+        antiScanCmd = "sudo rkhunter --check"
+        os.system(antiScanCmd)
+        time.sleep(cmdCooldown)
+        print("Rootkit hunter scan complete")
+        print("|==============================|")
+        time.sleep(printCooldown)
+    else:
+        print("Loading most recent scan...")
+        time.sleep(printCooldown)
     updateAntimalware = "../anti/updateAntimalware.py"
     antiCmd = "sudo python3 " + updateAntimalware
     print("Updating antimalware data...")

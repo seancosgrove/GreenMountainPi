@@ -1,5 +1,5 @@
 Running Rootkit Hunter version 1.4.6 on raspberrypi
-Info: Start date is Wed  4 Dec 19:00:47 EST 2019
+Info: Start date is Wed  4 Dec 20:07:23 EST 2019
 Checking configuration file and command-line options...
 Info: Detected operating system is 'Linux'
 Info: Found O/S name: Raspbian GNU/Linux 10 (buster)
@@ -1792,5 +1792,5 @@ Rootkits checked : 496
 Possible rootkits: 0
 Applications checks...
 All checks skipped
-The system checks took: 5 minutes and 30 seconds
-Info: End date is Wed  4 Dec 19:06:20 EST 2019
+The system checks took: 5 minutes and 6 seconds
+Info: End date is Wed  4 Dec 20:12:32 EST 2019
