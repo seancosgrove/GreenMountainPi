@@ -17,6 +17,9 @@ def main():
     inet = networkTxt.read() # read file into string
     inet = inet.strip() # remove whitespace
 
+    # build message
+    print("|==== STARTING GMPI BUILD =====|")
+
     # execute updateNetwork.py
     updateNetwork = "../network/updateNetwork.py" # get path to updateNetwork.py
     networkCmd = "python3 " + updateNetwork # prepare os command

@@ -26,7 +26,7 @@ def main():
     os.system(IPcmd) # run os command
     time.sleep(cmdCooldown) # command cooldown
     print("|==============================|") # print to terminal
-    print("Networks located.") # print to terminal
+    print("Networks located") # print to terminal
     time.sleep(printCooldown) # print cooldown
 
     # execute nmap.py
