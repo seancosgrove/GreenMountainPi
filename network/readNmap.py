@@ -21,6 +21,10 @@ def main():
             log = log.split(" as:") # split string into list
             log = log[0] # get timestamp of log (log[1] = nmap command)
             log = log.strip() # remove whitespace
+        if (log.startswith("|")):
+            log = log.split("_") # split string into list 
+            log = log[1] # get http-title of log (log[0] = "|")
+            log = log.strip() # remove whitespace
         nmapCaptureLog.write(log + "\n") # write to nmapCaptureLog.txt
 
     # read each line of nmapScan.txt

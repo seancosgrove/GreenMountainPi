@@ -1,61 +1,61 @@
 Running Rootkit Hunter version 1.4.6 on raspberrypi
-Info: Start date is Thu  5 Dec 00:17:24 EST 2019
+Start date is Thu  5 Dec 00:17:24 EST 2019
 Checking configuration file and command-line options...
-Info: Detected operating system is 'Linux'
-Info: Found O/S name: Raspbian GNU/Linux 10 (buster)
-Info: Command line is /usr/bin/rkhunter --check
-Info: Environment shell is /bin/bash; rkhunter is using dash
-Info: Using configuration file '/etc/rkhunter.conf'
-Info: Installation directory is '/usr'
-Info: Using language 'en'
-Info: Using '/var/lib/rkhunter/db' as the database directory
-Info: Using '/usr/share/rkhunter/scripts' as the support script directory
-Info: Using '/usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/libexec' as the command directories
-Info: Using '/var/lib/rkhunter/tmp' as the temporary directory
-Info: No mail-on-warning address configured
-Info: X will be automatically detected
-Info: Found the 'basename' command: /usr/bin/basename
-Info: Found the 'diff' command: /usr/bin/diff
-Info: Found the 'dirname' command: /usr/bin/dirname
-Info: Found the 'file' command: /usr/bin/file
-Info: Found the 'find' command: /usr/bin/find
-Info: Found the 'ifconfig' command: /sbin/ifconfig
-Info: Found the 'ip' command: /sbin/ip
-Info: Found the 'ipcs' command: /usr/bin/ipcs
-Info: Found the 'ldd' command: /usr/bin/ldd
-Info: Found the 'lsattr' command: /usr/bin/lsattr
-Info: Found the 'lsmod' command: /sbin/lsmod
-Info: Found the 'lsof' command: /usr/bin/lsof
-Info: Found the 'mktemp' command: /bin/mktemp
-Info: Found the 'netstat' command: /bin/netstat
-Info: Found the 'numfmt' command: /usr/bin/numfmt
-Info: Found the 'perl' command: /usr/bin/perl
-Info: Found the 'pgrep' command: /usr/bin/pgrep
-Info: Found the 'ps' command: /bin/ps
-Info: Found the 'pwd' command: /bin/pwd
-Info: Found the 'readlink' command: /bin/readlink
-Info: Found the 'stat' command: /usr/bin/stat
-Info: Found the 'strings' command: /usr/bin/strings
-Info: System is not using prelinking
-Info: Using the '/usr/bin/sha256sum' command for the file hash checks
-Info: Stored hash values used hash function '/usr/bin/sha256sum'
-Info: Stored hash values did not use a package manager
-Info: The hash function field index is set to 1
-Info: No package manager specified: using hash function '/usr/bin/sha256sum'
-Info: Previous file attributes were stored
-Info: Enabled tests are: all
-Info: Disabled tests are: suspscan hidden_ports hidden_procs deleted_files packet_cap_apps apps
-Info: Found kernel symbols file '/proc/kallsyms'
-Info: Using syslog for some logging - facility/priority level is 'authpriv.warning'.
-Info: Found the 'logger' command: /usr/bin/logger
-Info: Using 'date' to process epoch second times
+Detected operating system is 'Linux'
+Found O/S name: Raspbian GNU/Linux 10 (buster)
+Command line is /usr/bin/rkhunter --check
+Environment shell is /bin/bash; rkhunter is using dash
+Using configuration file '/etc/rkhunter.conf'
+Installation directory is '/usr'
+Using language 'en'
+Using '/var/lib/rkhunter/db' as the database directory
+Using '/usr/share/rkhunter/scripts' as the support script directory
+Using '/usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin /usr/libexec' as the command directories
+Using '/var/lib/rkhunter/tmp' as the temporary directory
+No mail-on-warning address configured
+X will be automatically detected
+Found the 'basename' command: /usr/bin/basename
+Found the 'diff' command: /usr/bin/diff
+Found the 'dirname' command: /usr/bin/dirname
+Found the 'file' command: /usr/bin/file
+Found the 'find' command: /usr/bin/find
+Found the 'ifconfig' command: /sbin/ifconfig
+Found the 'ip' command: /sbin/ip
+Found the 'ipcs' command: /usr/bin/ipcs
+Found the 'ldd' command: /usr/bin/ldd
+Found the 'lsattr' command: /usr/bin/lsattr
+Found the 'lsmod' command: /sbin/lsmod
+Found the 'lsof' command: /usr/bin/lsof
+Found the 'mktemp' command: /bin/mktemp
+Found the 'netstat' command: /bin/netstat
+Found the 'numfmt' command: /usr/bin/numfmt
+Found the 'perl' command: /usr/bin/perl
+Found the 'pgrep' command: /usr/bin/pgrep
+Found the 'ps' command: /bin/ps
+Found the 'pwd' command: /bin/pwd
+Found the 'readlink' command: /bin/readlink
+Found the 'stat' command: /usr/bin/stat
+Found the 'strings' command: /usr/bin/strings
+System is not using prelinking
+Using the '/usr/bin/sha256sum' command for the file hash checks
+Stored hash values used hash function '/usr/bin/sha256sum'
+Stored hash values did not use a package manager
+The hash function field index is set to 1
+No package manager specified: using hash function '/usr/bin/sha256sum'
+Previous file attributes were stored
+Enabled tests are: all
+Disabled tests are: suspscan hidden_ports hidden_procs deleted_files packet_cap_apps apps
+Found kernel symbols file '/proc/kallsyms'
+Using syslog for some logging - facility/priority level is 'authpriv.warning'.
+Found the 'logger' command: /usr/bin/logger
+Using 'date' to process epoch second times
 Checking if the O/S has changed since last time...
-Info: Nothing seems to have changed.
-Info: Locking is not being used
+Nothing seems to have changed.
+Locking is not being used
 Starting system checks...
-Info: Starting test name 'system_commands'
+Starting test name 'system_commands'
 Checking system commands...
-Info: Starting test name 'strings'
+Starting test name 'strings'
 Performing 'strings' command checks
 Scanning for string /usr/sbin/ntpsx             [ OK ]
 Scanning for string /usr/sbin/.../bkit-ava      [ OK ]
@@ -177,19 +177,19 @@ Scanning for string /usr/man/man1/man1          [ OK ]
 Scanning for string /usr/man/man1/man1/lib      [ OK ]
 Scanning for string /usr/man/man1/man1/lib/.lib [ OK ]
 Scanning for string /usr/man/man1/man1/lib/.lib/.backup [ OK ]
-Info: Starting test name 'shared_libs'
+Starting test name 'shared_libs'
 Performing 'shared libraries' checks
 Checking for preloading variables               [ None found ]
-Info: Found library preload file: /etc/ld.so.preload
+Found library preload file: /etc/ld.so.preload
 Checking for preloaded libraries                [ Warning ]
 Warning: Found preloaded shared library: /usr/lib/arm-linux-gnueabihf/libarmmem-${PLATFORM}.so
-Info: Starting test name 'shared_libs_path'
+Starting test name 'shared_libs_path'
 Checking LD_LIBRARY_PATH variable               [ Not found ]
-Info: Starting test name 'properties'
+Starting test name 'properties'
 Performing file properties checks
 Checking for prerequisites                      [ OK ]
 /usr/sbin/adduser                               [ OK ]
-Info: Found file '/usr/sbin/adduser': it is whitelisted for the 'script replacement' check.
+Found file '/usr/sbin/adduser': it is whitelisted for the 'script replacement' check.
 /usr/sbin/chroot                                [ OK ]
 /usr/sbin/cron                                  [ OK ]
 /usr/sbin/groupadd                              [ OK ]
@@ -229,7 +229,7 @@ Info: Found file '/usr/sbin/adduser': it is whitelisted for the 'script replacem
 /usr/bin/last                                   [ OK ]
 /usr/bin/lastlog                                [ OK ]
 /usr/bin/ldd                                    [ OK ]
-Info: Found file '/usr/bin/ldd': it is whitelisted for the 'script replacement' check.
+Found file '/usr/bin/ldd': it is whitelisted for the 'script replacement' check.
 /usr/bin/less                                   [ OK ]
 /usr/bin/logger                                 [ OK ]
 /usr/bin/lsattr                                 [ OK ]
@@ -320,9 +320,9 @@ Stored file modification time : 1568069874 (09-Sep-2019 18:57:54)
 /bin/echo                                       [ OK ]
 /bin/ed                                         [ OK ]
 /bin/egrep                                      [ OK ]
-Info: Found file '/bin/egrep': it is whitelisted for the 'script replacement' check.
+Found file '/bin/egrep': it is whitelisted for the 'script replacement' check.
 /bin/fgrep                                      [ OK ]
-Info: Found file '/bin/fgrep': it is whitelisted for the 'script replacement' check.
+Found file '/bin/fgrep': it is whitelisted for the 'script replacement' check.
 /bin/fuser                                      [ OK ]
 /bin/grep                                       [ OK ]
 /bin/ip                                         [ OK ]
@@ -346,7 +346,7 @@ Info: Found file '/bin/fgrep': it is whitelisted for the 'script replacement' ch
 /bin/touch                                      [ OK ]
 /bin/uname                                      [ OK ]
 /bin/which                                      [ OK ]
-Info: Found file '/bin/which': it is whitelisted for the 'script replacement' check.
+Found file '/bin/which': it is whitelisted for the 'script replacement' check.
 /bin/kmod                                       [ OK ]
 /bin/systemd                                    [ Warning ]
 Warning: The file properties have changed:
@@ -371,9 +371,9 @@ Stored hash : 9718b54634cf65bfdd8ff17664b80dd9dbf8ce5f1aa33fe7c45d8c46e6b23de5
 Current inode: 168613    Stored inode: 170849
 Current file modification time: 1574191196 (19-Nov-2019 14:19:56)
 Stored file modification time : 1568069874 (09-Sep-2019 18:57:54)
-Info: Starting test name 'rootkits'
+Starting test name 'rootkits'
 Checking for rootkits...
-Info: Starting test name 'known_rkts'
+Starting test name 'known_rkts'
 Performing check of known rootkit files and directories
 Checking for 55808 Trojan - Variant A...
 Checking for file '/tmp/.../r'                  [ Not found ]
@@ -1317,15 +1317,15 @@ Checking for file '/etc/sysconfig/console/load.zk' [ Not found ]
 Checking for directory '/usr/share/.zk'         [ Not found ]
 Checking for directory '/usr/X11R6/.zk'         [ Not found ]
 ZK Rootkit                                        [ Not found ]
-Info: Starting test name 'additional_rkts'
+Starting test name 'additional_rkts'
 Performing additional rootkit checks
 Performing Suckit Rootkit additional checks
 Checking hard link count on '/sbin/init'      [ OK ]
 Checking for hidden file extensions           [ None found ]
 Running skdet command                         [ Skipped ]
-Info: Unable to find the 'skdet' command
+Unable to find the 'skdet' command
 Suckit Rootkit additional checks                [ OK ]
-Info: Starting test name 'possible_rkt_files'
+Starting test name 'possible_rkt_files'
 Performing check of possible rootkit files and directories
 Checking for file '/dev/sdr0'                 [ Not found ]
 Checking for file '/dev/pisu'                 [ Not found ]
@@ -1540,9 +1540,9 @@ Checking for directory '/usr/include/.ssh'    [ Not found ]
 Checking for directory '/usr/share/locale/jp/.<SP>' [ Not found ]
 Checking for directory '/usr/share/.sqe'      [ Not found ]
 Checking for possible rootkit files and directories [ None found ]
-Info: Starting test name 'possible_rkt_strings'
+Starting test name 'possible_rkt_strings'
 Performing check for possible rootkit strings
-Info: Using system startup paths: /etc/rc.local /etc/init.d /etc/systemd/system
+Using system startup paths: /etc/rc.local /etc/init.d /etc/systemd/system
 Checking for string 'phalanx'                 [ Not found ]
 Checking for string '/dev/proc/fuckit'        [ Not found ]
 Checking for string 'FUCK'                    [ Not found ]
@@ -1660,48 +1660,48 @@ Checking for string '/usr/include/mysql/mysql.hh1' [ Not found ]
 Checking for string '/usr/include/mysql/mysql.hh1' [ Not found ]
 Checking for string '/usr/include/mysql/mysql.hh1' [ Not found ]
 Checking for possible rootkit strings           [ None found ]
-Info: Starting test name 'malware'
+Starting test name 'malware'
 Performing malware checks
-Info: Test 'deleted_files' disabled at users request.
-Info: Starting test name 'running_procs'
+Test 'deleted_files' disabled at users request.
+Starting test name 'running_procs'
 Checking running processes for suspicious files [ None found ]
-Info: Test 'hidden_procs' disabled at users request.
-Info: Test 'suspscan' disabled at users request.
-Info: Starting test name 'login_backdoors'
+Test 'hidden_procs' disabled at users request.
+Test 'suspscan' disabled at users request.
+Starting test name 'login_backdoors'
 Checking for '/bin/.login'                    [ Not found ]
 Checking for '/sbin/.login'                   [ Not found ]
 Checking for login backdoors                    [ None found ]
-Info: Starting test name 'sniffer_logs'
+Starting test name 'sniffer_logs'
 Checking for file '/usr/lib/libice.log'       [ Not found ]
 Checking for file '/dev/prom/sn.l'            [ Not found ]
 Checking for file '/dev/fd/.88/zxsniff.log'   [ Not found ]
 Checking for sniffer log files                  [ None found ]
-Info: Starting test name 'tripwire'
+Starting test name 'tripwire'
 Checking for software intrusions                [ Skipped ]
-Info: Check skipped - tripwire not installed
-Info: Starting test name 'susp_dirs'
+Check skipped - tripwire not installed
+Starting test name 'susp_dirs'
 Checking for directory '/usr/X11R6/bin/.,/copy' [ Not found ]
 Checking for directory '/dev/rd/cdb'          [ Not found ]
 Checking for suspicious directories             [ None found ]
-Info: Starting test name 'ipc_shared_mem'
-Info: The minimum shared memory segment size to be checked (in bytes): 1048576 (1.0MB)
+Starting test name 'ipc_shared_mem'
+The minimum shared memory segment size to be checked (in bytes): 1048576 (1.0MB)
 Checking for suspicious (large) shared memory segments [ None found ]
-Info: Starting test name 'trojans'
+Starting test name 'trojans'
 Performing trojan specific checks
 Checking for enabled inetd services             [ Skipped ]
-Info: Check skipped - file '/etc/inetd.conf' does not exist.
+Check skipped - file '/etc/inetd.conf' does not exist.
 Checking for enabled xinetd services            [ Skipped ]
-Info: Check skipped - file '/etc/xinetd.conf' does not exist.
+Check skipped - file '/etc/xinetd.conf' does not exist.
 Checking for Apache backdoor                    [ Not found ]
-Info: Starting test name 'os_specific'
+Starting test name 'os_specific'
 Performing Linux specific checks
 Checking loaded kernel modules                [ OK ]
-Info: Using modules pathname of '/lib/modules/4.19.75-v7+'
+Using modules pathname of '/lib/modules/4.19.75-v7+'
 Checking kernel module names                  [ OK ]
-Info: Starting test name 'network'
+Starting test name 'network'
 Checking the network...
 Performing checks on the network ports
-Info: Starting test name 'ports'
+Starting test name 'ports'
 Performing check for backdoor ports
 Checking for TCP port 1524                    [ Not found ]
 Checking for TCP port 1984                    [ Not found ]
@@ -1726,62 +1726,62 @@ Checking for TCP port 60922                   [ Not found ]
 Checking for TCP port 62883                   [ Not found ]
 Checking for TCP port 65535                   [ Not found ]
 Checking for backdoor ports                     [ None found ]
-Info: Test 'hidden_ports' disabled at users request.
+Test 'hidden_ports' disabled at users request.
 Performing checks on the network interfaces
-Info: Starting test name 'promisc'
+Starting test name 'promisc'
 Checking for promiscuous interfaces             [ None found ]
-Info: Test 'packet_cap_apps' disabled at users request.
-Info: Starting test name 'local_host'
+Test 'packet_cap_apps' disabled at users request.
+Starting test name 'local_host'
 Checking the local host...
-Info: Starting test name 'startup_files'
+Starting test name 'startup_files'
 Performing system boot checks
 Checking for local host name                    [ Found ]
-Info: Starting test name 'startup_malware'
+Starting test name 'startup_malware'
 Checking for system startup files               [ Found ]
 Checking system startup files for malware       [ None found ]
-Info: Starting test name 'group_accounts'
+Starting test name 'group_accounts'
 Performing group and account checks
 Checking for passwd file                        [ Found ]
-Info: Found password file: /etc/passwd
+Found password file: /etc/passwd
 Checking for root equivalent (UID 0) accounts   [ None found ]
-Info: Found shadow file: /etc/shadow
+Found shadow file: /etc/shadow
 Checking for passwordless accounts              [ None found ]
-Info: Starting test name 'passwd_changes'
+Starting test name 'passwd_changes'
 Checking for passwd file changes                [ None found ]
-Info: Starting test name 'group_changes'
+Starting test name 'group_changes'
 Checking for group file changes                 [ None found ]
 Checking root account shell history files       [ OK ]
-Info: Starting test name 'system_configs'
+Starting test name 'system_configs'
 Performing system configuration file checks
-Info: Starting test name 'system_configs_ssh'
+Starting test name 'system_configs_ssh'
 Checking for an SSH configuration file          [ Found ]
-Info: Found an SSH configuration file: /etc/ssh/sshd_config
-Info: Rkhunter option ALLOW_SSH_ROOT_USER set to 'no'.
-Info: Rkhunter option ALLOW_SSH_PROT_V1 set to '2'.
+Found an SSH configuration file: /etc/ssh/sshd_config
+Rkhunter option ALLOW_SSH_ROOT_USER set to 'no'.
+Rkhunter option ALLOW_SSH_PROT_V1 set to '2'.
 Checking if SSH root access is allowed          [ Warning ]
 Warning: The SSH configuration option 'PermitRootLogin' has not been set.
 Checking if SSH protocol v1 is allowed          [ Not set ]
 Checking for other suspicious configuration settings [ None found ]
-Info: Starting test name 'system_configs_syslog'
+Starting test name 'system_configs_syslog'
 Checking for a running system logging daemon    [ Found ]
-Info: A running 'rsyslog' daemon has been found.
-Info: A running 'systemd-journald' daemon has been found.
-Info: Found an rsyslog configuration file: /etc/rsyslog.conf
-Info: Found a systemd configuration file: /etc/systemd/journald.conf
+A running 'rsyslog' daemon has been found.
+A running 'systemd-journald' daemon has been found.
+Found an rsyslog configuration file: /etc/rsyslog.conf
+Found a systemd configuration file: /etc/systemd/journald.conf
 Checking for a system logging configuration file [ Found ]
 Checking if syslog remote logging is allowed    [ Not allowed ]
-Info: Starting test name 'filesystem'
+Starting test name 'filesystem'
 Performing filesystem checks
-Info: SCAN_MODE_DEV set to 'THOROUGH'
+SCAN_MODE_DEV set to 'THOROUGH'
 Checking /dev for suspicious file types         [ None found ]
 Checking for hidden files and directories       [ Warning ]
 Warning: Hidden directory found: /etc/.java
 Warning: Hidden file found: /etc/.fstab: ASCII text
 Checking for missing log files                  [ Skipped ]
-Info: No missing log file names configured.
+No missing log file names configured.
 Checking for empty log files                    [ Skipped ]
-Info: No empty log file names configured.
-Info: Test 'apps' disabled at users request.
+No empty log file names configured.
+Test 'apps' disabled at users request.
 System checks summary
 =====================
 File properties checks...
@@ -1793,4 +1793,4 @@ Possible rootkits: 0
 Applications checks...
 All checks skipped
 The system checks took: 6 minutes and 14 seconds
-Info: End date is Thu  5 Dec 00:23:40 EST 2019
+End date is Thu  5 Dec 00:23:40 EST 2019

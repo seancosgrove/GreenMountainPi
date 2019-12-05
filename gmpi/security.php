@@ -42,6 +42,7 @@ include "top.php"
                     echo "</p>";
                     echo "</div>";
                     echo "</div>";
+                    echo "<hr>";
                     }
                     fclose($firewallLogFile);
                 } else {
@@ -57,16 +58,48 @@ include "top.php"
         </div>
         <div class="scrollBar">
             <?php
+
+            function endsWith($string, $endString)
+            {
+                $length = strlen($endString);
+                if ($length == 0) {
+                    return true;
+                }
+                return (substr($string, -$length) == $endString);
+            }
+
             $rootkitHunterLogTxt = "/~/../../var/www/anti/rootkitHunterLog.txt";
             $rootkitHunterLogFile = fopen($rootkitHunterLogTxt,"r") or die("Unable to open file.");
             echo fread($rootkitHunterLogFile,filesize($rootkitHunterLogTxt,"r"));
             if ($rootkitHunterLogFile) {
                 while (($line = fgets($rootkitHunterLogFile)) !== false) {
-                    echo '<div class="d-flex flex-row bd-highlight mb-3">';
-                    echo "<p>";
-                    echo $line;
-                    echo "</p>";
-                    echo "</div>";
+                    if (endsWith($line, "[ OK ]")) {
+                        $length = strlen($line);
+                        $maxMessageLength = $length - 6;
+                        $status = substr($line, -6);
+                        $maxMessage = substr($line, 0, $maxMessageLength);
+                        $message = rtrim($maxMessage);
+                        echo '<div class="d-flex flex-row bd-highlight mb-3">';
+                        echo '<div class="col-md-9">';
+                        echo "<p>";
+                        echo $message;
+                        echo "</p>";
+                        echo "</div>";
+                        echo '<div class="col-md-3">';
+                        echo "<p>";
+                        echo $status;
+                        echo "</p>";
+                        echo "</div>";
+                        echo "</div>";
+                        echo "<hr>";
+                    } else {
+                        echo '<div class="d-flex flex-row bd-highlight mb-3">';
+                        echo "<p>";
+                        echo $line;
+                        echo "</p>";
+                        echo "</div>";
+                        echo "<hr>";
+                    }
                 }
                 fclose($rootkitHunterLogFile);
             } else {
