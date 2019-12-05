@@ -8,9 +8,9 @@ import time
 
 def main():
 
-    # initialize cooldown in between commands
-    cmdCooldown = 3
-    printCooldown = 1
+    # initialize cooldown variables
+    cmdCooldown = 3 # command cooldown
+    printCooldown = 1 # print cooldown
 
     # get connected inet address for print message
     networkTxt = open("../network/network.txt","r") # open network.txt file

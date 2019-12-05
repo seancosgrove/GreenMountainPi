@@ -1,5 +1,5 @@
 Running Rootkit Hunter version 1.4.6 on raspberrypi
-Info: Start date is Wed  4 Dec 20:07:23 EST 2019
+Info: Start date is Wed  4 Dec 22:05:02 EST 2019
 Checking configuration file and command-line options...
 Info: Detected operating system is 'Linux'
 Info: Found O/S name: Raspbian GNU/Linux 10 (buster)
@@ -306,7 +306,7 @@ Warning: The file properties have changed:
 File: /sbin/runlevel
 Current inode: 15077    Stored inode: 32698
 Current file modification time: 1574191196 (19-Nov-2019 14:19:56)
-Stored file modification time : 1568069874 (09-Sep-2019 18:57:54)
+Stored file modification time : 1568069874 (09-Sep-2019 18:57:55)
 /sbin/sulogin                                   [ OK ]
 /sbin/sysctl                                    [ OK ]
 /bin/bash                                       [ OK ]
@@ -361,7 +361,7 @@ Warning: The file properties have changed:
 File: /bin/systemctl
 Current inode: 165592    Stored inode: 136840
 Current file modification time: 1574191196 (19-Nov-2019 14:19:56)
-Stored file modification time : 1568069874 (09-Sep-2019 18:57:54)
+Stored file modification time : 1568069874 (09-Sep-2019 18:57:55)
 /bin/dash                                       [ OK ]
 /lib/systemd/systemd                            [ Warning ]
 Warning: The file properties have changed:
@@ -1792,5 +1792,5 @@ Rootkits checked : 496
 Possible rootkits: 0
 Applications checks...
 All checks skipped
-The system checks took: 5 minutes and 6 seconds
-Info: End date is Wed  4 Dec 20:12:32 EST 2019
+The system checks took: 5 minutes and 47 seconds
+Info: End date is Wed  4 Dec 22:10:52 EST 2019

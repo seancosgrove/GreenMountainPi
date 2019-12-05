@@ -8,51 +8,49 @@ import time
 
 def main():
 
-    cmdCooldown = 3
-    printCooldown = 1
+    # initialize cooldown variables
+    cmdCooldown = 3 # cooldown in between os command
+    printCooldown = 1 # cooldown in between print statements
+
+    # get connect inet address
+    networkTxt = open("../network/network.txt", "r") # open network.txt file with connected network inet
+    inet = networkTxt.read() # read file into string
 
     # execute updateNetwork.py
-    updateNetwork = "../network/updateNetwork.py"
-    networkCmd = "sudo python3 " + updateNetwork
-    print("Updating network data...")
-    time.sleep(printCooldown)
-    os.system(networkCmd)
-    time.sleep(cmdCooldown)
-    print("Network updated")
-    time.sleep(printCooldown)
+    updateNetwork = "../network/updateNetwork.py" # get path to updateNetwork.py
+    networkCmd = "python3 " + updateNetwork # prepare os command
+    print("Updating network data...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    os.system(networkCmd) # run os command
+    time.sleep(cmdCooldown) # command cooldown
+    print("Network updated") # print to terminal
+    time.sleep(printCooldown) # print cooldown
 
-    # copy contents of firewall folder to web server
-    updateFirewall = "../firewall/updateFirewall.py"
-    firewallCmd = "sudo python3 " + updateFirewall
-    print("Updating firewall data...")
-    time.sleep(printCooldown)
-    os.system(firewallCmd)
-    time.sleep(cmdCooldown)
-    print("Firewall updated")
-    time.sleep(printCooldown)
+    # execute updateFirewall.py
+    updateFirewall = "../firewall/updateFirewall.py" # get path to updateFirewall.py
+    firewallCmd = "python3 " + updateFirewall # prepare os command
+    print("Updating firewall data...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    os.system(firewallCmd) # run os command
+    time.sleep(cmdCooldown) # command cooldown
+    print("Firewall updated") # print to terminal
+    time.sleep(printCooldown) # print cooldown
 
-    print("Would you like to run an antimalware scan? (y/n)")
-    response = str(input())
-    if (str.lower(response) == "y"):
-        print("|==============================|")
-        antiScanCmd = "sudo rkhunter --check"
-        os.system(antiScanCmd)
-        time.sleep(cmdCooldown)
-        print("Rootkit hunter scan complete")
-        print("|==============================|")
-        time.sleep(printCooldown)
-    else:
-        print("Loading most recent scan...")
-        time.sleep(printCooldown)
-    updateAntimalware = "../anti/updateAntimalware.py"
-    antiCmd = "sudo python3 " + updateAntimalware
-    print("Updating antimalware data...")
-    time.sleep(printCooldown)
-    os.system(antiCmd)
-    time.sleep(cmdCooldown)
-    print("Antimalware updated")
-    time.sleep(printCooldown)
-    print("|===== GMPI BUILD SUCCESS =====|") # build success
+    # execute updateAntimalware.py
+    updateAntimalware = "../anti/updateAntimalware.py" # get path to updateAntimalware.py
+    antiCmd = "python3 " + updateAntimalware # prepare os command
+    print("Updating antimalware data...") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+    os.system(antiCmd) # run os command
+    time.sleep(cmdCooldown) # command cooldown
+    print("Antimalware updated") # print to terminal
+    time.sleep(printCooldown) # print cooldown
+
+    # build success message
+    print("|===== GMPI BUILD SUCCESS =====|")
+    print("| Visit the Green Mountain Pi  |")
+    print("| website at: " + inet + "     |")
+    print("|==============================|")
 
 main()
 

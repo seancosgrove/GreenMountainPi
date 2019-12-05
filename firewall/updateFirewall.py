@@ -13,8 +13,8 @@ def main():
     printCooldown = 1
 
     # initialize command strings to run python
-    getFirewallLogCmd = "sudo python3 ../firewall/getFirewallLog.py"
-    readFirewallLogCmd = "sudo python3 ../firewall/readFirewallLog.py"
+    getFirewallLogCmd = "python3 ../firewall/getFirewallLog.py"
+    readFirewallLogCmd = "python3 ../firewall/readFirewallLog.py"
 
     # execute getFirewallLog.py
     print("Getting firewall.log...")

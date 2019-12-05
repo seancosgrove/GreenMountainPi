@@ -8,7 +8,7 @@ import os
 def main():
 
     # copy contents of rkhunter.log to this directory
-    antiCmd = "sudo cp -r ~/../../var/log/rkhunter.log ../anti/rkhunter.log"
+    antiCmd = "cp -r ~/../../var/log/rkhunter.log ../anti/rkhunter.log"
     os.system(antiCmd)
 
 main()
