@@ -125,3 +125,7 @@ a:hover {
     max-width: 1125px;
     max-height: 420px;
 }
+
+.box {
+    border-radius: 0em;
+}

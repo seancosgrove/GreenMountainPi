@@ -1,3 +1,8 @@
+<!-- Sean Cosgrove and Emery Wollerscheid -->
+<!-- Green Mountain Pi -->
+<!-- CS 121 Final Project -->
+<!-- nav.php -->
+
 <hr>
 <ul class="nav justify-content-center">
 	<li class="nav-item">

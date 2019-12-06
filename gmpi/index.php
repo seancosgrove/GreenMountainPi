@@ -1,3 +1,8 @@
+<!-- Sean Cosgrove and Emery Wollerscheid -->
+<!-- Green Mountain Pi -->
+<!-- CS 121 Final Project -->
+<!-- index.php -->
+
 <?php
 include "top.php";
 ?>
@@ -18,6 +23,16 @@ include "top.php";
     <p>With a larger budget, the concepts used on the GMPi could be upgraded for better performance and more functionality.
     Given an operating system with more compatibility, we could build an intrustion prevention system, layer on different types of antivirus/antimalware, use different networking tools such as Wireshark, and implement a live camera feed. 
     </p>
+
+    <figure>
+        <h1><img class="box" 
+            src="/img/repomap.jpg"
+            alt="Project repository map"
+            width="auto"
+            height="auto"
+        </h1>
+    </figure>
+
 </div>
 
 <?php

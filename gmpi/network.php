@@ -1,3 +1,8 @@
+<!-- Sean Cosgrove and Emery Wollerscheid -->
+<!-- Green Mountain Pi -->
+<!-- CS 121 Final Project -->
+<!-- network.php -->
+
 <?php
 include "top.php";
 ?>

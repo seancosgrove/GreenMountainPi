@@ -1,3 +1,8 @@
+<!-- Sean Cosgrove and Emery Wollerscheid -->
+<!-- Green Mountain Pi -->
+<!-- CS 121 Final Project -->
+<!-- security.php -->
+
 <?php
 include "top.php"
 ?>
@@ -10,9 +15,9 @@ include "top.php"
                 <h2>Directions</h2>
             </div>
             <div class="col-md-9">
-                <p>The Firewall section displays the firewall logs in reverse so the most recent activity is at the top.</p>
-                <p>The Antimalware section displays the rkhunter logs.</p>
-                <p>The Nmap Scan section displays data from a scan of UDP ports that are used in DDos reflection attacks.</p>
+                <p>The Firewall section displays the firewall logs in reverse so the most recent activity is at the top. Any logs with warnings are displayed again underneath.</p>
+                <p>The Antimalware section displays the rkhunter logs along with any of its warnings also displayed underneath.</p>
+                <p>The Nmap Scan section displays data from a scan of UDP ports that are used in DDos reflection attacks. If the four ports are closed than they are secure.</p>
             </div>
         </div>
         <hr>

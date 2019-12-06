@@ -1,6 +1,6 @@
-# Nmap 7.70 scan initiated Thu Dec  5 17:27:23 2019 as: nmap -sU -A -PN -n -pU:19,53,123,161 -script=ntp-monlist,dns-recursion,snmp-sysdescr -oN ../network/nmapScan.txt 192.168.1.16
+# Nmap 7.70 scan initiated Thu Dec  5 20:06:47 2019 as: nmap -sU -A -PN -n -pU:19,53,123,161 -script=ntp-monlist,dns-recursion,snmp-sysdescr -oN ../network/nmapScan.txt 192.168.1.16
 Nmap scan report for 192.168.1.16
-Host is up (0.000098s latency).
+Host is up (0.000097s latency).
 
 PORT    STATE  SERVICE VERSION
 19/udp  closed chargen
@@ -14,4 +14,4 @@ Too many fingerprints match this host to give specific OS details
 Network Distance: 0 hops
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Dec  5 17:27:28 2019 -- 1 IP address (1 host up) scanned in 6.36 seconds
+# Nmap done at Thu Dec  5 20:06:52 2019 -- 1 IP address (1 host up) scanned in 6.44 seconds

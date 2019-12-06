@@ -1,7 +1,7 @@
 # Sean Cosgrove and Emery Wollerscheid
 # Green Mountain Pi
 # CS 121 Final Project
-# readFirewallLog.py
+# readRootkitHunterLog.py
 
 import os
 import time

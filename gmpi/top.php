@@ -1,3 +1,8 @@
+<!-- Sean Cosgrove and Emery Wollerscheid -->
+<!-- Green Mountain Pi -->
+<!-- CS 121 Final Project -->
+<!-- top.php -->
+
 <?php
 $phpSelf = htmlentities($_SERVER['PHP_SELF'], ENT_QUOTES, "UTF-8");
 $path_parts = pathinfo($phpSelf);
