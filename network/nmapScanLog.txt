@@ -1,6 +1,6 @@
-# Nmap 7.70 scan initiated Thu Dec  5 20:06:47 2019
+# Nmap 7.70 scan initiated Thu Dec  5 21:36:16 2019
 Nmap scan report for 192.168.1.16
-Host is up (0.000097s latency).
+Host is up (0.00010s latency).
 
 PORT    STATE  SERVICE VERSION
 19/udp  closed chargen
@@ -14,4 +14,4 @@ Too many fingerprints match this host to give specific OS details
 Network Distance: 0 hops
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Dec  5 20:06:52 2019 -- 1 IP address (1 host up) scanned in 6.44 seconds
+# Nmap done at Thu Dec  5 21:36:22 2019 -- 1 IP address (1 host up) scanned in 6.49 seconds
