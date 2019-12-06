@@ -10,12 +10,14 @@ include "top.php"
                 <h2>Directions</h2>
             </div>
             <div class="col-md-9">
-                <p></p>
+                <p>The Firewall section displays the firewall logs in reverse so the most recent activity is at the top.</p>
+                <p>The Antimalware section displays the rkhunter logs.</p>
+                <p>The Nmap Scan section displays data from a scan of UDP ports that are used in DDos reflection attacks.</p>
             </div>
         </div>
         <hr>
         <div class="row justify-content-md-center">
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <h2>Firewall</h2>
             </div>
         </div>
@@ -52,58 +54,90 @@ include "top.php"
         </div>
         <hr>
         <div class="row justify-content-md-center">
+            <div class="col-md-5">
+                <h2>Firewall Warnings</h2>
+            </div>
+        </div>
+        <div class="scrollBar">
+            <?php
+            $firewallLogWarningsTxt = "/~/../../var/www/firewall/firewallLogWarnings.txt";
+            $firewallLogWarningsFile = fopen($firewallLogWarningsTxt,"r") or die("Unable to open file.");
+            echo fread($firewallLogWarningsFile,filesize($firewallLogWarningsTxt,"r"));
+            if ($firewallLogWarningsFile) {
+                while (($line = fgets($firewallLogWarningsFile)) !== false) {
+                    $length = strlen($line);
+                    $messageLength = 15 - $length;
+                    $timestamp = substr($line, 0, 15);
+                    $message = substr($line, $messageLength);
+                    echo '<div class="row justify-content-md-center">';
+                    echo '<div class="col-md-3">';
+                    echo "<p>";
+                    echo $timestamp;
+                    echo "</p>";
+                    echo "</div>";
+                    echo '<div class="col-md-9">';
+                    echo "<p>";
+                    echo $message;
+                    echo "</p>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "<hr>";
+                    }
+                    fclose($firewallLogWarningsFile);
+                } else {
+                    echo "Unable to open firewallLogWarnings.txt";
+                }
+                ?>
+        </div>
+        <hr>
+        <div class="row justify-content-md-center">
             <div class="col-md-3">
                 <h2>Antimalware</h2>
             </div>
         </div>
         <div class="scrollBar">
             <?php
-
-            function endsWith($string, $endString)
-            {
-                $length = strlen($endString);
-                if ($length == 0) {
-                    return true;
-                }
-                return (substr($string, -$length) == $endString);
-            }
-
             $rootkitHunterLogTxt = "/~/../../var/www/anti/rootkitHunterLog.txt";
             $rootkitHunterLogFile = fopen($rootkitHunterLogTxt,"r") or die("Unable to open file.");
             echo fread($rootkitHunterLogFile,filesize($rootkitHunterLogTxt,"r"));
             if ($rootkitHunterLogFile) {
                 while (($line = fgets($rootkitHunterLogFile)) !== false) {
-                    if (endsWith($line, "[ OK ]")) {
-                        $length = strlen($line);
-                        $maxMessageLength = $length - 6;
-                        $status = substr($line, -6);
-                        $maxMessage = substr($line, 0, $maxMessageLength);
-                        $message = rtrim($maxMessage);
-                        echo '<div class="d-flex flex-row bd-highlight mb-3">';
-                        echo '<div class="col-md-9">';
-                        echo "<p>";
-                        echo $message;
-                        echo "</p>";
-                        echo "</div>";
-                        echo '<div class="col-md-3">';
-                        echo "<p>";
-                        echo $status;
-                        echo "</p>";
-                        echo "</div>";
-                        echo "</div>";
-                        echo "<hr>";
-                    } else {
-                        echo '<div class="d-flex flex-row bd-highlight mb-3">';
-                        echo "<p>";
-                        echo $line;
-                        echo "</p>";
-                        echo "</div>";
-                        echo "<hr>";
-                    }
+                    echo '<div class="d-flex flex-row bd-highlight mb-3">';
+                    echo "<p>";
+                    echo $line;
+                    echo "</p>";
+                    echo "</div>";
+                    echo "<hr>";
                 }
                 fclose($rootkitHunterLogFile);
             } else {
                 echo "Unable to open rootkitHunterLog.txt";
+            }
+            ?>
+        </div>
+        <hr>
+        <div class="row justify-content-md-center">
+            <div class="col-md-5">
+                <h2>Rootkit Hunter Warnings</h2>
+            </div>
+        </div>
+        <div class="scrollBar">
+            <?php
+            $rootkitHunterLogWarningsTxt = "/~/../../var/www/anti/rootkitHunterLogWarnings.txt";
+            $rootkitHunterLogWarningsFile = fopen($rootkitHunterLogWarningsTxt,"r") or die("Unable to open file.");
+            echo fread($rootkitHunterLogWarningsFile,filesize($rootkitHunterLogWarningsTxt,"r"));
+            if ($rootkitHunterLogWarningsFile) {
+                while (($line = fgets($rootkitHunterLogWarningsFile)) !== false) {
+                    echo '<div class="d-flex flex-row bd-highlight mb-3">';
+                    echo "<p>";
+                    echo $line;
+                    echo "</p>";
+                    echo "</div>";
+                    echo "<hr>";
+                }
+                fclose($rootkitHunterLogWarningsFile);
+            } else {
+                echo "Unable to open rootkitHunterLogWarnings.txt";
             }
             ?>
         </div>

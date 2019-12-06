@@ -11,7 +11,11 @@ include "top.php";
                 <h2>Directions</h2>
             </div>
             <div class="col-md-9">
-                <p>The Addresses Section shows a scan of the network properties of the Raspberry Pi and the Nmap Capture Section displays a list of the most recent network activity.</p>
+                <p>The Addresses section displays connected Inet addresses where:</p>
+                <p>    wlan0 = connected Wifi network</p>
+                <p>    eth0 = laptop connected through ethernet</p>
+                <p>    lo = Green Mountain Pi device</p>
+                <p>The Nmap Capture Section displays data from scanning TCP ports and identifies the HTTP service</p>
             </div>
         </div>
         <hr>
