@@ -1,3 +1,15 @@
+Dec  6 12:13:09 WARN::hcd_init_fiq:497: MPHI regs_base at bb810000
+Dec  6 12:13:09 WARN::hcd_init_fiq:458: FIQ ASM at 80655664 length 36
+Dec  6 12:13:09 WARN::hcd_init_fiq:457: FIQ on core 1
+Dec  6 12:13:09 WARN::dwc_otg_hcd_init:1045: FIQ DMA bounce buffers: virt = bad14000 dma = 0xfad14000 len=9024
+Dec  6 11:55:13 WARN::hcd_init_fiq:497: MPHI regs_base at bb810000
+Dec  6 11:55:13 WARN::hcd_init_fiq:458: FIQ ASM at 80655664 length 36
+Dec  6 11:55:13 WARN::hcd_init_fiq:457: FIQ on core 1
+Dec  6 11:55:13 WARN::dwc_otg_hcd_init:1045: FIQ DMA bounce buffers: virt = bad14000 dma = 0xfad14000 len=9024
+Dec  6 11:45:18 WARN::hcd_init_fiq:497: MPHI regs_base at bb810000
+Dec  6 11:45:18 WARN::hcd_init_fiq:458: FIQ ASM at 80655664 length 36
+Dec  6 11:45:18 WARN::hcd_init_fiq:457: FIQ on core 1
+Dec  6 11:45:18 WARN::dwc_otg_hcd_init:1045: FIQ DMA bounce buffers: virt = bad14000 dma = 0xfad14000 len=9024
 Dec  6 11:37:36 WARN::hcd_init_fiq:497: MPHI regs_base at bb810000
 Dec  6 11:37:36 WARN::hcd_init_fiq:458: FIQ ASM at 80655664 length 36
 Dec  6 11:37:36 WARN::hcd_init_fiq:457: FIQ on core 1

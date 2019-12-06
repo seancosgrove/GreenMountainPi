@@ -1,10 +1,10 @@
-# Nmap 7.70 scan initiated Fri Dec  6 11:40:48 2019 as: nmap --script=http-title -oN ../network/nmapCapture.txt 10.245.14.82
-Nmap scan report for ip0af50e52.int.uvm.edu (10.245.14.82)
-Host is up (0.000064s latency).
+# Nmap 7.70 scan initiated Fri Dec  6 14:49:45 2019 as: nmap --script=http-title -oN ../network/nmapCapture.txt 10.245.66.122
+Nmap scan report for ip0af5427a.int.uvm.edu (10.245.66.122)
+Host is up (0.000061s latency).
 Not shown: 998 closed ports
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
 |_http-title: Green Mountain Pi
 
-# Nmap done at Fri Dec  6 11:40:52 2019 -- 1 IP address (1 host up) scanned in 4.60 seconds
+# Nmap done at Fri Dec  6 14:49:49 2019 -- 1 IP address (1 host up) scanned in 4.36 seconds

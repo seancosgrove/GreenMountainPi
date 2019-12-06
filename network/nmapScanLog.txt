@@ -1,14 +1,17 @@
-# Nmap 7.70 scan initiated Fri Dec  6 11:40:58 2019
-Nmap scan report for 10.245.14.82
-Host is up (0.00012s latency).
+# Nmap 7.70 scan initiated Fri Dec  6 14:49:55 2019
+Nmap scan report for 10.245.66.122
+Host is up (0.000099s latency).
 
 PORT    STATE  SERVICE VERSION
 19/udp  closed chargen
 53/udp  closed domain
 123/udp closed ntp
 161/udp closed snmp
+Device type: remote management|webcam|phone|general purpose|storage-misc
+Running: Avocent embedded, AXIS embedded, Google Android 2.X, Linux 2.6.X|3.X, ZyXEL embedded
+OS CPE: cpe:/h:axis:207w_network_camera cpe:/o:google:android:2.2 cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:2.6.17 cpe:/o:linux:linux_kernel:3.8 cpe:/h:zyxel:nsa-210
 Too many fingerprints match this host to give specific OS details
 Network Distance: 0 hops
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Fri Dec  6 11:41:03 2019 -- 1 IP address (1 host up) scanned in 7.02 seconds
+# Nmap done at Fri Dec  6 14:50:00 2019 -- 1 IP address (1 host up) scanned in 6.41 seconds
